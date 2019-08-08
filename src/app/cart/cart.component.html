@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-4">
+      <!-- <app-shopping-edit
+      (ingredientAdded)="onIngredientAdded($event)"></app-shopping-edit> -->
+
+      <!-- <hr> -->
+     <ul class="list-group"  *ngFor= "let category of itemsCat">
+       <!-- <a class="list-group-item" style="cursor: pointer"
+       *ngFor="let item of items">
+      {{ item.name}}({{item.amount}})
+      </a> -->
+      <a class="list-group-item" style="cursor: pointer"
+     >
+{{category._Name}}
+<img [src]="category._ImagePath">
+<br>
+{{category._Price}}
+<div>
+    <span class="btn btn-info" (click)="removeFromCart(category)">
+        Remove
+        <span class="glyphicon glyphicon-remove"></span>
+    </span>
+     <!-- <button type="button" pButton class="btn" (click)="removeFromCart(category)"> -->
+          <!-- </button> -->
+  </div>
+      </a>
+     </ul>
+     <div>
+Total: {{totalPrice}}
+     </div>
+</div>

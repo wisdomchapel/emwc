@@ -1,0 +1,138 @@
+<form #productForm = "ngForm"><!--employeeForm holds the reference to the form-->
+  <div class="panel panel-primary">
+      <div class="panel-heading ">
+          <span ><h3 class="center_header">Create Product</h3>
+          <img src="../../assets/images/logoMoi.PNG" style="width:70px; height:50px;margin-left:100px;">
+</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <label for="productId">Product ID</label>
+          <input id="productId" name="prodId" [(ngModel)] = "ProductId" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <input id="Description" name="Description" [(ngModel)] = "Description" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+              <label for="ImagePath">Image</label>
+              <input id = "ImagePath" name="ImagePath" type="file" class="form-control" (change)= "onFileChange($event)" #fileInput [(ngModel)]="ImagePath" required>
+        </div>
+        <div class="form-group">
+          <label for="size">Size</label>
+          <select id="size" name="size" [(ngModel)] = "Size" class="form-control">
+            <option *ngFor="let size of sizeNames" [ngValue] = "size">{{size}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label for="size">Category</label>
+            <select id="category" name="category" [(ngModel)] = "CategoryType" class="form-control">
+              <option *ngFor="let categry of catNames" [ngValue] = "categry">{{categry}}</option>
+            </select>
+          </div>
+        <div class="form-group">
+              <label for="price">Price</label>
+              <input id="price" name="price" [(ngModel)] = "Price" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+              <label for="number">Number</label>
+              <select id="number" name="number" [(ngModel)] = "Number" class="form-control">
+                  <option *ngFor="let number of numbers" [ngValue] = "number">{{number}}</option>
+              </select>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <button type="submit" class="btn btn-primary" (click)="SaveCategory(); productForm.reset()">Save</button>
+        <span *ngIf = "saved">
+            <div class="alert  alert-success">Saved Successfully</div>
+        </span>
+      </div>
+    </div>
+
+</form>
+
+<!-- {{employeeForm.value | json}} -->
+
+<!-- <div class="container">
+
+    <div class="d-flex justify-content-center h-100">
+      <div class=" login-panel">
+        <div class="card-header">
+            <div class="ui-g-12">
+                <img src="../../assets/images/logoMoi.PNG" style="width:100px">
+            </div>
+          <h3>Add Category</h3>
+          <!- <div class="d-flex justify-content-end social_icon">
+                      <span><i class="fab fa-facebook-square"></i></span>
+                      <span><i class="fab fa-google-plus-square"></i></span>
+                      <span><i class="fab fa-fac"></i></span>
+          </div> ->
+
+        </div>
+
+        <div class="card-body">
+          <form class="go-bottom" #myForm = "ngForm">
+            <div class=" align-items-center">
+               <input id="productId" name="productId" type="text" [(ngModel)]="ProductId" class="form-group" [ngModelOptions]="{standalone:true}" [ngModelOptions]="{standalone:true}" required>
+        <label for="productId" >Category Id</label>
+            </div>
+            <div class=" form-group align-items-center">
+                    <input type="text" class="form-group" [(ngModel)]="Name" [ngModelOptions]="{standalone:true}" [ngModelOptions]="{standalone:true}" required>
+                  <label>Name</label>
+
+            </div>
+
+            <div class=" form-group align-items-center">
+                <input type="text" class="form-group"  [(ngModel)]="Description" [ngModelOptions]="{standalone:true}" [ngModelOptions]="{standalone:true}" required>
+                <label>Description</label>
+          </div>
+
+          <div class=" form-group align-items-center" >
+              <span class="fontWhite">Image</span>
+              <input type="file" class="form-group" (change)= "onFileChange($event)" #fileInput [(ngModel)]="ImagePath" [ngModelOptions]="{standalone:true}" required>
+
+
+        </div>
+
+      <div class=" form-group align-items-center dropdown">
+        <span class=" fontWhite ">Size</span>
+          <select class="dropdown-item" [(ngModel)] ="Size" [ngModelOptions]="{standalone:true}">
+              <option *ngFor="let size of sizeNames" [ngValue]="size" >{{size}}</option>
+            </select>
+            <span class="fontWhite">Category</span>
+            <select [(ngModel)] = "CategoryType" [ngModelOptions]="{standalone:true}">
+                <!- <option *ngFor="let symbol of keys(CategoryType)" [ngValue]="CategoryType[symbol]">{{symbol}}</option> ->
+                <option *ngFor="let category of catNames" [ngValue]="category">{{category}}</option>
+              </select>
+          <!- <label>Size</label> ->
+    </div>
+      <div class=" form-group align-items-center">
+          <input type="text" class="form-group"  [(ngModel)]="Price" [ngModelOptions]="{standalone:true}" required>
+          <label>Price</label>
+    </div>
+
+    <div class=" form-group align-items-center">
+        <span class="fontWhite">Number</span>
+        <select  [(ngModel)] = "Number" [ngModelOptions]="{standalone:true}">
+            <option *ngFor="let number of numbers" [ngValue]="number" >{{number}}</option>
+          </select>
+        <!- <input type="text" class="form-group" [(ngModel)]="Number" [ngModelOptions]="{standalone:true}" required> ->
+
+      </div>
+
+            <div class="form-inline ui-g-6">
+                <input type="submit" value="Save" (click)="SaveCategory(); myForm.reset()" class="btn float-right login_btn">
+                <span *ngIf = "saved">
+                    <div class="alert  alert-success">Saved Successfully</div>
+
+                </span>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->

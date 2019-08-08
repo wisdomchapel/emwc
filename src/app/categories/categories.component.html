@@ -1,0 +1,87 @@
+<!-- <div class="row" *ngIf="!itemSelect" > -->
+<div class="row" >
+  <div class="col-md-2">
+      <div class="sidenav">
+
+            <a (click)="open = !open">Categories</a>
+          <div *ngIf="open">
+            <a class="categoryList" routerLink="/products/gowns" >Gowns</a>
+            <a class="categoryList" routerLink = "/products/LongGown">Long Gowns</a>
+            <a class="categoryList" routerLink = "/products/DinnerGown">Dinner Gowns</a>
+            <a class="categoryList" routerLink = "/products/PatternedGown">Patterned Gowns</a>
+            <a class="categoryList" routerLink = "/products/PlainColorGown">Plain Color Gowns</a>
+            <a class="categoryList" routerLink = "/products/ShortGown">Short Gowns</a>
+            <a class="categoryList" routerLink = "/products/PatternedSGown">Patterned Gowns</a>
+            <a class="categoryList" routerLink = "/products/PlainColorSGown">Plain Color Gowns</a>
+            <a class="categoryList" routerLink = "/products/ChurchGown">Church Gowns</a>
+            <a class="categoryList" routerLink = "/products/OfficeGown">Office Gowns</a>
+            <a class="categoryList" routerLink ="/products/TraditionalWearGown" >Traditional Wear</a>
+            <a class="categoryList" routerLink ="/products/AnkaraGown" >Ankara Gowns</a>
+            <a class="categoryList" routerLink ="/products/LaceGown" >Lace Gowns</a>
+            <a class="categoryList" routerLink ="/products/GuineaGown" >Guinea Gowns</a>
+            <a class="categoryList" routerLink = "/products/shirts" >Shirts</a>
+            <a class="categoryList" routerLink="/products/LongSleevedShirt" >Long Sleeved Shirts</a>
+            <a class="categoryList" routerLink="/products/CheckedShirts" >Checked Shirts</a>
+            <a class="categoryList" routerLink="/products/PlainShirts" >Plain Shirts</a>
+            <a class="categoryList" routerLink="/products/ChiffonShirts" >Chiffons</a>
+            <a class="categoryList" routerLink="/products/PeplumShirts" >Peplum</a>
+            <a class="categoryList" routerLink="/products/ShortSleevedShirts" >Short Sleeved Shirts</a>
+            <a class="categoryList" routerLink="/products/CheckedShortShirts" >Checked Shirts</a>
+            <a class="categoryList" routerLink="/products/PlainShortShirts" >Plain Shirts</a>
+            <a class="categoryList" routerLink="/products/ChiffonShortShirts" >Chiffons</a>
+            <a class="categoryList" routerLink="/products/PeplumShortShirts" >Peplum</a>
+            <a class="categoryList" routerLink="/products/TraditionalWearShirts" >Tradtional Shirts</a>
+            <a class="categoryList" routerLink="/products/AnkaraTop" >Ankara Tops</a>
+            <a class="categoryList" routerLink="/products/GuineaTop" >Guinea Tops</a>
+            <a class="categoryList" routerLink = "/products/trousers" >Trousers</a>
+            <a class="categoryList" routerLink="/products/Pants" >Pants</a>
+            <a class="categoryList" routerLink="/products/Shorts" >Shorts</a>
+            <a class="categoryList" routerLink="/products/OfficeTrousers" >Office Trousers</a>
+            <a class="categoryList" routerLink="/products/Jeans" >Jeans</a>
+            <a class="categoryList" routerLink="/products/Jergens" >Jergens</a>
+            <a class="categoryList" routerLink="/products/ThreeQJeans" >Shorts</a>
+            <a class="categoryList" routerLink="/products/BumpShorts" >Bump Shorts</a>
+            <a class="categoryList" routerLink="/products/TraditionalWearTrouser" >Traditional Wear</a>
+            <a class="categoryList" routerLink="/products/AnkaraTrouser" >Ankara Trouser</a>
+            <a class="categoryList" routerLink="/products/GuineaTrouser" >Guinea Trouser</a>
+            <a class="categoryList" routerLink = "/products/shoes" >Shoes</a>
+            <a class="categoryList" routerLink="/products/Flats" >Flats</a>
+            <a class="categoryList" routerLink="/products/Suade" >Suade</a>
+            <a class="categoryList" routerLink="/products/ShinyShoe" >Shiny</a>
+            <a class="categoryList" routerLink="/products/Leather" >Leather</a>
+            <a class="categoryList" routerLink="/products/Sandals" >Sandals</a>
+            <a class="categoryList" routerLink="/products/Heels" >Heels</a>
+            <a class="categoryList" routerLink="/products/Stilettos" >Stilettos</a>
+            <a class="categoryList" routerLink="/products/BlockHeels" >Block Heels</a>
+            <a class="categoryList" routerLink="/products/SandalHeels" >Sandal Heels</a>
+            <a class="categoryList" routerLink="/products/Sneakers" >Sneakers</a>
+            <a class="categoryList" routerLink = "/products/bags" >Bags</a>
+            <a class="categoryList" routerLink = "/products/skirts" >Skirts</a>
+            <a class="categoryList" routerLink="/products/PencilSkirts" >Pencil Skirts</a>
+            <a class="categoryList" routerLink="/products/CheckedPencilSkirts" >Checked Skirts</a>
+            <a class="categoryList" routerLink="/products/PlainPencilSkirts" >Plain Skirts</a>
+            <a class="categoryList" routerLink="/products/FloweredPencilSkirts" >Flowered Skirts</a>
+            <a class="categoryList" routerLink="/products/ALineSkirts" >A-Line Skirts</a>
+            <a class="categoryList" routerLink="/products/PlainA_Line" >Plain A-Line</a>
+            <a class="categoryList" routerLink="/products/FloweryA_Line" >Flowery A-Line</a>
+            <a class="categoryList" routerLink="/products/PlainCheckedA_Line" >Plain Checked A-Line</a>
+            <a class="categoryList" routerLink="/products/TraditionalWearSkirts" >Traditional Skirts</a>
+            <a class="categoryList" routerLink="/products/AnkaraSkirt" >Ankara Skirts</a>
+            <a class="categoryList" routerLink="/products/GuineaSkirt" >Guinea Skirts</a>
+            <a class="categoryList" routerLink="/products/BandageSkirts" >Bandage Skirts</a>
+            <a class="categoryList" routerLink="/products/JeanSkirts" >Jeans Skirts</a>
+            <a class="categoryList" routerLink="/products/CarribeanSkirts" >Carribean Skirts</a>
+            </div>
+
+          <a href="#">Price</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div><!--sidenav-->
+  </div> <!--col-md-2-->
+  <div class="col-md-10">
+
+          <app-category-list></app-category-list>
+
+  </div>
+
+</div>

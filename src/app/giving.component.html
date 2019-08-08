@@ -1,0 +1,83 @@
+<div class="col-md-4 testimonyhalfDiv" >
+  <div class="col-md-12" style="color: white">
+      <span style="font-size: x-large">GIVING</span><br/>
+      <span style="font-size: large">Giving to the Lord.</span><br/>
+     Give, and it will come back to you. Good measures, pressed down, shaken together and running over.  </div>
+  <div class="col-md-12">
+      <b>PRAYER POINT</b><br/>
+      <hr>
+      <ul>
+        <li> Keep it simple</li>
+        <li> Be concise yet detailed</li>
+        <li> Be ready to provide supporting documents if necessary</li>
+      </ul>
+
+  </div>
+  </div>
+  <div class="col-md-8">
+      <form #productForm = "ngForm">
+        <div class="panel panel-primary">
+            <div class="panel-heading testimonyhalfDiv" style="  text-align: center;">
+                <span ><h3>GIVE TO THE LORD</h3>
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="size">Payment Type</label>
+                    <select id="givingType" name="givingType" [(ngModel)] = "Giving" class="form-control" >
+                        <option hidden [value]="Giving"  selected>Select how you want to give </option>
+                        <option *ngFor="let givTypes of givingTypes" [ngValue] = "givTypes">{{givTypes}}</option>
+                    </select>
+                  </div>
+
+              <div class="form-group">
+                  <label for="Name">Full Name (required)</label>
+                  <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="Email">Email</label>
+                  <input id="Email" name="Email" [(ngModel)] = "Email" type="text" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="Name">Amount</label>
+                  <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="Name">Sex</label>
+                  <select id="sex" name="sex" [(ngModel)] = "Sex" class="form-control">
+                      <option hidden [value]="Sex"  selected>Select a Sex </option>
+                      <option *ngFor="let sex of sexes" [ngValue] = "sex">{{sex}}</option>
+                    </select>
+              </div>
+              <div class="form-group">
+                  <label for="country">Country</label>
+                  <select id="country" name="country" [(ngModel)] = "Country" class="form-control">
+                    <option hidden [value]="Country"  selected>Select a Country </option>
+                    <option *ngFor="let country of countries" [ngValue] = "country">{{country}}</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="Currency">Currency</label>
+                  <select id="Currency" name="Currency" [(ngModel)] = "Currency" class="form-control">
+                    <option hidden [value]="Currency"  selected>Select a Country </option>
+                    <option *ngFor="let currency of currencies" [ngValue] = "currency">{{currency}}</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="PhoneNumber">Phone Number</label>
+                <input id="PhoneNumber" name="PhoneNumber" [(ngModel)] = "PhoneNumber" type="text" class="form-control" required>
+            </div>
+            </div>
+            <div class="panel-footer">
+              <button type="submit" class="btn btn-primary testimonyhalfDiv" (click)="Give(); productForm.reset()">Give</button>
+              <span *ngIf = "saved">
+                  <div class="alert  alert-success">Saved Successfully</div>
+              </span>
+            </div>
+          </div>
+
+      </form>
+<p>Thanks for giving. God bless you.</p>
+  </div>
+
+

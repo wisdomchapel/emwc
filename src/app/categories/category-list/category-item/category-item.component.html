@@ -1,0 +1,26 @@
+
+<div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+  <a class="list-group-item clearfix"
+   (click)="onGoToDetail(category)"
+  >
+  <!-- (click)="onSelected()" -->
+  <!-- domSanitizer.bypassSecurityTrustResourceUrl(category._ImagePath)
+  file:///
+C:/Angular2/WunmiProject/ChurchWebsitesApi/wwwroot/images/ee963a6d-cf8d-4e30-8ebe-4299e92ed004.jpg
+../../../../../../../../../Users/User/Pictures/ankara3.jpg"
+domSanitizer.bypassSecurityTrustResourceUrl(
+-->
+  <span class="col-md-12">
+
+    <img [src]="category._ImagePath" alt="{{category._Name}}"  class="img-responsive"
+     style="height: 150px;width:150px; object-fit:cover;">
+    </span>
+    <div>
+      <h4 class="list-group-item-heading headingHeight">{{ category._Name}}</h4>
+      <p class="list-group-item-text textHeight">{{ category._Description}}</p>
+      <p class="list-group-item-text">{{ category._Price}}</p>
+    </div>
+  </a>
+</div>
+
+<!-- <app-category-detail [catType]=""></app-category-detail> -->

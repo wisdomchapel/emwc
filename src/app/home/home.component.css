@@ -1,0 +1,21 @@
+.marginal{
+  margin-left: 50px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.rightFloat{
+  margin-left: 700px;
+ }
+
+ .background{
+   /* background-color: #259add; fc0000 */
+   background-color: magenta;
+   /* #8888ff; */
+   outline-color: blue;
+   outline-width: 40px;
+ }
+
+ .centerPosition{
+   align-content: center;
+ }

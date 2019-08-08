@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card login-panel">
+      <div class="card-header">
+          <div class="ui-g-12">
+              <img src="../../assets/images/logoMoi.PNG" style="width:100px">
+          </div>
+        <h3>Sign In</h3>
+        <!-- <div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-fac"></i></span>
+        </div> -->
+
+      </div>
+      <div class="card-body">
+        <form>
+
+          <div class=" form-group align-items-center">
+            <div class="input-group-prepend">
+              <span class="input-group-text "><i class="fa fa-user"></i>
+              </span>&nbsp;&nbsp;
+
+              <input type="text" class="form-inline" placeholder="Enter your username">
+            </div>
+
+          </div>
+
+          <div class=" form-group align-items-center">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-key"></i></span>&nbsp;&nbsp;
+              <input type="password" class="form-inline" placeholder="Enter your password">
+            </div>
+
+            <!-- <div class="ui-g-12">
+                <span class="md-inputfield">
+                    <input type="password" class="form-control" placeholder="Enter your password">
+                    <label>Password</label>
+                </span>
+            </div> -->
+          </div>
+          <div class="row align-items-center remember">
+              <input type="checkbox">Remember Me
+            </div>
+
+          <div class="form-group">
+            <button class="btn float-right login_btn" (click)="onLogin()">Login</button>
+              <!-- <input type="submit" value="Login" class="btn float-right login_btn"> -->
+              <span  *ngIf='loggedIn'>
+                <div class="alert  alert-success">Logged In Successfully,<br>
+                      Click any category to begin
+                </div>
+              </span>
+            </div>
+
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-center remember">
+          Dont have an account?<a routerLink="/registration"><span class="glyphicon glyphicon-registration-mark"></span>Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,362 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+  /* background-color: rgba(153, 255, 255, 0.1); */
+
+  /* background-image: url('./assets/images/background.jpg'); */
+  margin: 0px;
+  padding:0px;
+}
+
+.row.content {height: 450px}
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height:auto;
+  }
+}
+.itemDesc{
+  height: 40px;
+}
+.textHeight{
+  height:35px;
+}
+
+.headertext{
+  font-size: large;
+  color: magenta;
+  text-transform: capitalize;
+}
+.headingHeight{
+  height: 180px;
+}
+.login-panel {
+  text-align: center;
+  width: 350px;
+  min-height: 440px;
+  padding: 50px 20px;
+  margin: 100px auto 0 auto;
+}
+.indexBackground{
+  width:100%;
+  height: 500px;
+  background-image: url('./assets/images/churchbackground.jpg');
+}
+.verticalMiddle{
+  vertical-align: middle;
+  text-align: center;
+  color:white;
+}
+
+.welcomeAddress{
+  text-align: center;
+  color: #ff00ff;
+}
+
+.readLink{
+  color: #0277bd;
+}
+
+.welcomeAddText{
+  color:black;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.welcomeText{
+  font-size: xx-large;
+}
+.whoWeAreText{
+  font-size: 50px;
+  font-family: serif;
+  font-weight: bolder;
+}
+
+.whoWeAreDiv{
+  background-color: #000;
+  color: white;
+  height: 70px;
+  text-align: center;
+}
+.whoWeAreDiv .noListStyle li{
+  display: inline;
+  padding-left: 2rem;
+}
+.whoWeAreDiv .noListStyle li a{
+  color:white;
+}
+.welcomeText2{
+  font-size: medium;
+}
+.colorBackground{
+  color:black;
+}
+
+.testimonyhalfDiv{
+  /* background-color: #0099ff; */
+  background-color: #ff00ff;
+
+
+}
+
+.panel-footer>.testimonyhalfDiv{
+  background-color: #ff00ff;
+}
+
+.panel>.panel-heading{
+  background-color: rgb(255, 231, 12,0.6);
+  /* background-color: #ff00ff; */
+}
+.testimony .panel-heading{
+  background-color: rgb(255, 231, 12,0.6);
+
+}
+.overlay{
+  background-color: rgba(12, 255, 255, 0.6);
+  position: fixed; /* Sit on top of the page content */
+  /* display: none; Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0,0,0,0.5); Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.sidenav {
+  height: 100%;
+  width: 100%;
+  /* position: fixed; */
+  z-index: 1;
+  /* top: 100; */
+  left: 0;
+  /* background-color: #ddd; */
+
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: teal;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #0ea;
+}
+
+.sidenav a.categoryList{
+  font-size: 15px;
+  color:#000;
+  list-style-type:none;
+}
+
+.sidenav a.categoryList:hover{
+  font-size: 15px;
+  color:#0ea;
+  list-style-type:none;
+}
+
+
+.largeText{
+  font-size: xx-large;
+}
+
+.smallText{
+  font-size: small;
+  text-transform: capitalize;
+}
+
+ul li.marginal a.product_hover{
+  color:white;
+}
+
+
+a.product_hover{
+  /* display: none; */
+  font-size: small;
+
+
+
+}
+.hoverMe{
+
+}
+
+ul.noListStyle{
+list-style-type: none;
+}
+
+a.gownTextHover:link, a.gownTextHoverHead:link{
+  text-decoration: none;
+}
+a.gownTextHover{
+  color:#000;
+  font-size:small;
+}
+a.gownTextHover:hover{
+color: #000;
+font-size:small;
+/* 0099ff */
+text-decoration: none;
+font-weight: bold;
+}
+a.gownTextHoverHead{
+  color: #0099ff;
+  font-size: medium;
+text-decoration: none;
+}
+a.gownTextHoverHead:hover{
+  /* color: #ff0000;
+text-decoration: none; */
+font-weight: bold;
+}
+.ghover{
+  display: none;
+  background-color: rgb(232, 232, 232);
+   /* rgb(215, 253, 253);
+  rgba(223, 223, 223, 0.6); */
+  position: fixed; /* Sit on top of the page content */
+  width: 90%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  left: 5%;
+  right: 5%;
+  z-index: 3;
+  cursor: pointer;
+
+}
+.whoWeAre{
+  display: none;
+  background-color: rgb(232, 232, 232);
+   /* rgb(215, 253, 253);
+  rgba(223, 223, 223, 0.6); */
+  position: fixed; /* Sit on top of the page content */
+  width: 15%; /* Full width (cover the whole page) */
+  height: auto; /* Full height (cover the whole page) */
+  left: 8%;
+  /* right: 5%; */
+  z-index: 3;
+  cursor: pointer;
+  border-style: solid;
+  /* border-color:  #270ac7 transparent transparent transparent; */
+  border-color:  #ff0055 transparent transparent transparent;
+
+}
+.giving{
+  display: none;
+  background-color: rgb(232, 232, 232);
+   /* rgb(215, 253, 253);
+  rgba(223, 223, 223, 0.6); */
+  position: fixed; /* Sit on top of the page content */
+  width: 15%; /* Full width (cover the whole page) */
+  height: auto; /* Full height (cover the whole page) */
+  left: 42%;
+  /* right: 5%; */
+  z-index: 3;
+  cursor: pointer;
+  border-style: solid;
+  border-color:  #ff0055 transparent transparent transparent;
+}
+.wisdomMedia{
+  display: none;
+  background-color: rgb(232, 232, 232);
+   /* rgb(215, 253, 253);
+  rgba(223, 223, 223, 0.6); */
+  position: fixed; /* Sit on top of the page content */
+  width: 15%; /* Full width (cover the whole page) */
+  height: auto; /* Full height (cover the whole page) */
+  left: 57%;
+  /* right: 5%; */
+  z-index: 3;
+  cursor: pointer;
+  border-style: solid;
+  border-color:  #ff0055 transparent transparent transparent;
+}
+
+.aboutUs{
+  display: none;
+  background-color: rgb(232, 232, 232);
+  position: fixed; /* Sit on top of the page content */
+  width: fit-content; /* Full width (cover the whole page) */
+  height: auto; /* Full height (cover the whole page) */
+  left: 20%;
+  /* right: 5%; */
+  z-index: 1;
+  cursor: pointer;
+  border-style: solid;
+  border-color:  #ff0055 transparent transparent transparent;
+}
+
+.contactUs{
+  display: none;
+  background-color: rgb(232, 232, 232);
+  position: fixed; /* Sit on top of the page content */
+  width: 70%; /* Full width (cover the whole page) */
+  height: fit-content; /* Full height (cover the whole page) */
+  left: 10%;
+  /* right: 5%; */
+  z-index: 1;
+  cursor: pointer;
+  border-style: solid;
+  border-color:  #ff0055 transparent transparent transparent;
+}
+
+.categoryList{
+  font-size: 15px;
+  color:#000;
+  list-style-type:none;
+}
+
+.marginal:hover a.product_hover + span.ghover{
+   display: block;
+ }
+ .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
+ ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.wisdomMedia{
+  display: block;
+}
+
+ .downinfo{
+   background-color: magenta;
+   height:200px;
+   bottom: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 13px;
+   /* font-family: Verdana, Geneva, sans-serif; */
+ }
+
+ .CTerms{
+   background-color: #000;
+   color:white;
+   /* height: 50%; */
+   vertical-align: middle;
+   text-align: center;
+
+
+ }
+/* li:hover + div.gown_hover{
+  display: block;
+  background-color: #0ea;
+} */
+
+p:hover + .after{
+  display: block;
+  color:green;
+  font-size: 25px;
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

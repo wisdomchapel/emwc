@@ -1,0 +1,31 @@
+<div class="col-md-3">
+  <div class="col-xs-6">
+    <img [src]="category._ImagePath" alt="{{category._Name}}"
+    class="img-responsive" style="max-width: 300;">
+  </div>
+
+  <div class="col-xs-6 ">
+    <h1 class="colorBackground">{{category._Name}}</h1>
+    <p class="colorBackground">{{category._Description}}</p>
+    <p class="colorBackground">{{category._Price}}</p>
+    <a (click)= "onAddToCart()" routerLink= "/cart" style="cursor: pointer;">Add To Cart</a>&nbsp;&nbsp;
+    <a (click)="purchase()" routerLink= "/cart" style="cursor:pointer;">Purchase</a>
+
+    <!-- [routerLink]="['shopping-list',category.name]" -->
+    <!-- <button (click)='onAddToShoppingList()'>Add</button> -->
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="col-xs-12">
+      <li class="list-group-item"
+      *ngFor="let item of category.itemBought">
+      {{item.name}} - {{item.amount}}
+    </li>
+    </div>
+  </div>
+
+
+
+
+
+
