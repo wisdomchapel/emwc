@@ -1,0 +1,22 @@
+<form #productForm = "ngForm">
+  <div>
+      <!-- <div id="share" class="tab-pane fade in active"> -->
+
+
+      <div  class="container tab-pane fadein active">
+         <div *ngFor="let testimony of testimonies">
+
+            <div class="card testimony">
+                <h4 class="list-group-item-heading card-header">{{ testimony._Title}}</h4>
+                <p class="list-group-item-text ">{{ testimony._Name}}</p>
+                <p class="list-group-item-text">{{ testimony._Email}}</p>
+                <p class="list-group-item-text ">{{ testimony._Sex}}</p>
+                <p class="list-group-item-text">{{ testimony._Country}}</p>
+                <p class="list-group-item-text ">{{ testimony._Date}}</p>
+                <p class="list-group-item-text">{{ testimony._Testimony}}</p>
+              </div>
+        </div>
+      </div>
+
+  </div>
+              </form>

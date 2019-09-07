@@ -1,18 +1,29 @@
-
-      <div class="indexBackground">
+      <div class="beliefBackground">
           <div style="height:200px"></div>
-          <div class="d-flex verticalMiddle">
-              <span class=" whoWeAreText">OUR BELIEFS</span><br/>
+          <div class="verticalMiddle animated bounceInDown">
+              <span class=" missionText">OUR BELIEFS</span><br/>
           </div>
         </div>
-        <div class="whoWeAreDiv">
-            <ul class="noListStyle ">
-                <li><a routerLink = "/history">Our History</a></li>
-                <li><a routerLink = "/missionvision">Mission and Vision</a></li>
-                <li><a routerLink = "/beliefs">Our Beliefs</a></li>
-                <li><a routerLink = "/structure">Our Structure</a></li>
-              </ul>
-        </div>
+        <ngui-inview>
+            <div *ngIf class="whoWeAreDiv">
+                <div class="row d-flex">
+                  <div class="col-md-3 col-sm-12 text-center mt-lg-4"><!--mt: margin-top lg:large screen-->
+                    <a class="whoweareLink"routerLink = "/history">Our History</a>
+                  </div>
+                  <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+                    <a class="whoweareLink" routerLink = "/missionvision">Mission and Vision</a>
+                  </div>
+                  <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+                    <a class="whoweareLink" routerLink = "/beliefs">Our Beliefs</a>
+                  </div>
+                  <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+                    <a class="whoweareLink" routerLink = "/structure">Our Structure</a>
+                  </div>
+                </div>
+
+              </div>
+        </ngui-inview>
+
         <div class="container">
           <div class="body">
             <div class="welcomeAddress">

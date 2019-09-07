@@ -21,3 +21,20 @@ export class Testimony{
   }
 
 }
+
+export class Prayer{
+  public state:State;
+  /**
+   *
+   */
+  constructor(public _Name:string,public _Email:string,public _Title:string,public _Sex:string,public _Country:Countries,
+   public Prayer:string) {
+    this._Name = _Name;
+    this._Email = _Email;
+    this._Title = _Title;
+    this._Sex = _Sex;
+    this._Country = _Country;
+    this.Prayer = Prayer;
+  }
+
+}

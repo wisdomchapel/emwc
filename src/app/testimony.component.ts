@@ -31,6 +31,8 @@ export class TestimonyComponent implements OnInit{
   date:Date;
   subscription: Subscription;
 viewTestimonies:boolean = false;
+Stestimony:boolean = true;
+VTestimony:boolean ;
 
 
   testimonytypes = Object.keys(TestimonyType);
@@ -44,51 +46,15 @@ viewTestimonies:boolean = false;
   }
 
   ngOnInit(){
-    this.date = new Date(Date.now());
-    this.testimonies = this.testService.getTestimonies();
-    this.subscription = this.testService.testimonySubChanged
-    .subscribe(
-      (testimonies: Testimony[]) =>{
-        this.testimonies = testimonies;
-        console.log(this.testimonies);
-      }
-    );
-  }
-
-  PostCategory(testimony){
-    this.catService.PostTestimony(testimony).subscribe(
-      res => {console.log("res = ", res), this.saved = true},
-      err => console.log(err)
-    );
-  }
-
-  // UploadCategory(ProductId,testimony,file){
-
-  // }
-  SaveTestimony(){
-      let testimony:Testimony;
-      testimony = new Testimony(this.Name,this.Email,this.Title,this.Sex,this.Country,this.date,this.Testimony);
-        testimony.state = State.New;
-        // this.testimonies.push(testimony);
-
-        //this.catService.urlCategory()
-        // this.PostCategory(testimony);
-        this.SaveToList(testimony);
-        this.saved = true;
-
-      //   setTimeout(function() {
-      //     this.saved = false;
-      //     console.log(this.saved);
-      // }, 3000);
-        this.testService.getTestimonies();
-
-        this.saved = false;
-
-  }
-
-  SaveToList(testimony){
-    this.testService.addTestimonytoList(testimony);
-
+    // this.date = new Date(Date.now());
+    // this.testimonies = this.testService.getTestimonies();
+    // this.subscription = this.testService.testimonySubChanged
+    // .subscribe(
+    //   (testimonies: Testimony[]) =>{
+    //     this.testimonies = testimonies;
+    //     console.log(this.testimonies);
+    //   }
+    // );
   }
 
 
@@ -97,8 +63,17 @@ viewTestimonies:boolean = false;
     this.viewTestimonies = true;
     this.testService.getTestimonies();
 
-
   }
+   shareTestimony()
+   {
+    this.Stestimony = true;
+    this.VTestimony = false;
+   }
+   ViewTestimonies()
+   {
+this.VTestimony= true;
+this.Stestimony = false;
+   }
 
 }
 

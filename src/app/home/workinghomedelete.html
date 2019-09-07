@@ -1,0 +1,151 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+  <nav class="navbar navbar-dark navbar-expand-lg  background">
+          <span routerLinkActive="active" [routerLinkActiveOptions]= "{exact:true}">
+          <a class="navbar-brand" routerLink="/"> <img src="../../assets/images/wisdomLogo.jpg" style="width:40px; height: 30px"> </a>
+        </span>
+        <!-- <div class= "navbar-header"> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> -->
+
+
+        <!-- </div> -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item marginal text-uppercase " role="presentation" routerLinkActive = "active">
+                <!-- <a class="nav-link product_hover" routerLink = "/who-we-are">Who we Are
+                  <span class="fas fa fa-caret-down"></span></a> -->
+
+    <a class="nav-link product_hover " routerLink = "/who-we-are" style="display: inline">Who we Are </a>
+    <span class="whoWeAre">
+        <ul class="noListStyle ">
+            <li><a class="gownTextHover"  routerLink = "/history">Our History</a></li>
+            <li><a class="gownTextHover"  routerLink = "/missionvision">Mission and Vision</a></li>
+            <li><a class="gownTextHover"  routerLink = "/beliefs">Our Beliefs</a></li>
+            <li><a class="gownTextHover"  routerLink = "/structure">Our Structure</a></li>
+          </ul>
+      </span>
+              </li>
+
+              <li class="nav-item marginal text-uppercase " role="presentation" >
+
+    <a class="nav-link product_hover " routerLink = "/about" style="display: inline">About Us </a>
+    <span class="aboutUs">
+        <ul class="noListStyle ">
+          <li><a class="gownTextHover"  routerLink = "/about">Our Church</a></li>
+          <li><a class="gownTextHover"  routerLink = "/organizations">Affiliated Organizations</a></li>
+          <li><a class="gownTextHover"  routerLink = "/branches">Our Branches</a></li>
+          </ul>
+      </span>
+              </li>
+
+              <li class="nav-item marginal text-uppercase" role="presentation"><a class="nav-link product_hover" routerLink = "/contact" style="display: inline">Contact<span class="caret"></span></a>
+                <span class="contactUs">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="col-md-12">
+                              <span class="largeText"><br/>CONTACT US</span><br/>
+                              <p>+2348033476606</p>
+                          <p style="text-transform: lowercase"><a href="mailto:wisdomchapel@gmail.com">wisdomchapel@gmail.com</a> </p>
+                          <br>
+                          <span class="largeText">
+                            Wisdom Chapel<br/>
+                          </span>
+                          <span class="smallText">
+                          Plot 6, Adelani Lane, OluwaGbebe Street,<br/>
+                          Ologunfe Bus-Stop,<br/>
+                          Lagos.
+                          </span>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="col-md-12">
+                            <span class="headertext">
+                              <br/><br/>
+                              <p>Quick Links</p>
+                            </span>
+                            <span class="smallText">
+                              <p><a routerLink = "/branches">Branch Locator</a></p>
+                              <p><a routerLink = "/careers">Career Opportunites</a></p>
+                            </span>
+                          </div>
+
+                          <div class="col-md-12">
+                            <span class="headertext">
+                              <br/>Connect With Us<br/>
+                            </span>
+                            <span class="smallText">
+                                <a href="https://www.facebook.com/WisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/facebook.png" alt="facebook" width="32" height="32" border="0" style="color:black">Facebook</a><br>
+                                <a href="https://twitter.com/WisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/twitter.png" alt="twitter" width="32" height="32" border="0">Twitter</a><br/>
+                                <a href="https://instagram.com/company/wisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/linkedin.png" alt="linkedin" width="32" height="32" border="0">Instagram</a><br/>
+                            </span>
+                          </div>
+
+                        </div>
+                         <div class="col-md-4">
+                    <span class="headertext">
+                      <br/><br/>
+                      Service Times
+                    </span><br/>
+                    <span class="smallText">
+                        Sundays at 8:00 am<br/>
+                        Wednesdays at 6:00 pm<br/>
+                        Feetwashing Service : 1st Tuesday of the month
+                        Business Forum: 1st Thursday of the month
+                    </span><br><br>
+                    <span class="headertext">
+                      <a routerLink="/testimony">View Testimonies</a><br/><br/>
+                      <a [routerLink]="['/prayer-request']" routerLinkActive="router-link-active">Send Prayer Request</a>
+                    </span>
+                  </div>
+                  </div>
+
+
+                  </span>
+              </li>
+              <li class="nav-item marginal text-uppercase" role="presentation"><a class="nav-link product_hover" routerLink = "/giving" style="display: inline">Online Giving </a>
+                <!-- <span class="giving">
+                    <ul class="noListStyle">
+                        <li><a class="gownTextHover"  routerLink = "/products/DinnerGown">Offerings</a></li>
+                        <li><a class="gownTextHover"  routerLink = "/products/PatternedGown">Tithes</a></li>
+                        <li><a class="gownTextHover"  routerLink = "/products/PlainColorGown">Seeds</a></li>
+                        <li><a class="gownTextHover"  routerLink = "/products/PlainColorGown">Building Form</a></li>
+                      </ul>
+                  </span> -->
+              </li>
+              <li class="nav-item marginal text-uppercase" role="presentation"><a class="nav-link product_hover" routerLink = "/programs" style="display: inline">Programs</a>
+                <span class="programs">
+                    <ul class="noListStyle">
+                        <li><a class="gownTextHover"  routerLink = "/programs#feetwash">FeetWashing Service</a></li>
+                        <li><a class="gownTextHover"  href = "/programs#businessforum">Business Forum</a></li>
+                        <li><a class="gownTextHover"  href = "/programs#convention">Annual Convention</a></li>
+                        <li><a class="gownTextHover"  href = "/programs#mountain">Mountain Experience</a></li>
+                        <li><a class="gownTextHover"  href = "/programs#womenConvention">Women Convention</a></li>
+                        <li><a class="gownTextHover"  href = "/programs#evangelism">Evangelism</a></li>
+                      </ul>
+                  </span>
+
+              </li>
+            </ul>
+            <!-- <ul class=" centerPosition">
+              <img src="../../assets/images/logoMoi.PNG" style="width:50px; height:50px">
+            </ul> -->
+            <!-- <ul class="nav navbar-nav navbar-right">
+
+              <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <!- <li><button class="btn btn-blue"><a rounterLink="/cart"><i class="fas fa-shopping-cart"></i>My Cart [(ngModel)] = "itemNo"</a></button></li>{{ '{' }} -->
+              <!-- <li class="btn btn-info "> <a routerLink="/cart" >
+                <span class="glyphicon glyphicon-shopping-cart"></span>Cart <span class="numBackground" >{{ '{' }}{{itemNo}}{{ '}' }}</span>
+              </a></li> ->
+            </ul> -->
+          </div>
+
+
+
+    </nav>
+    <br>

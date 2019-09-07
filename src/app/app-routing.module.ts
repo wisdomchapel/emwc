@@ -22,13 +22,19 @@ import { BranchesComponent } from "./branches/branches.component";
 import { ContactComponent } from "./contact/contact.component";
 import { CareersComponent } from "./careers/careers.component";
 import { MountainExperienceComponent } from "./mountain-experience.component";
-import { ConventionComponent } from './convention.component'
+import { ConventionComponent } from './Programs/convention/convention.component'
 import { TestimonyComponent } from "./testimony.component";
 import { GivingComponent } from "./giving.component";
-import { WomenConventionComponent } from "./women-convention/women-convention.component";
-import { EvangelismComponent } from "./evangelism/evangelism.component";
+import { WomenConventionComponent } from "./Programs/women-convention/women-convention.component";
+import { EvangelismComponent } from "./Programs/evangelism/evangelism.component";
 import { PrayerRequestComponent } from './prayer-request/prayer-request.component';
 import { WisdomMediaComponent } from './wisdom-media/wisdom-media.component';
+import { ProgramsComponent } from './Programs/programs.component';
+import { MountainComponent } from './Programs/mountain/mountain.component';
+import { PraiseNightComponent } from './Programs/praise-night/praise-night.component';
+import { FeetWashComponent } from './Programs/feet-wash/feet-wash.component';
+import { BusinessForumComponent } from './Programs/business-forum/business-forum.component';
+import { DepartmentsComponent } from './departments/departments.component';
 
 const appRoutes:Routes = [
   // { path:'',component:HeaderComponent},
@@ -45,12 +51,20 @@ const appRoutes:Routes = [
   { path: 'branches', component:BranchesComponent},
   { path: 'contact', component:ContactComponent},
   { path: 'careers', component:CareersComponent},
+  { path: 'programs', component:ProgramsComponent},
   { path: 'mountain-experience', component:MountainExperienceComponent},
   { path: 'convention', component:ConventionComponent},
   { path: 'testimony', component:TestimonyComponent},
+
   { path: 'women_convention', component:WomenConventionComponent},
   { path: 'evangelism', component:EvangelismComponent},
+  { path: 'mountain', component:MountainComponent},
+  { path: 'praise-night', component:PraiseNightComponent},
+  { path: 'feet-wash', component:FeetWashComponent},
+  { path: 'business-forum', component:BusinessForumComponent},
+
   { path: 'giving', component:GivingComponent},
+  { path: 'department', component: DepartmentsComponent},
   { path: 'home-page', component:HomePageComponent},
   { path: 'prayer-request', component:PrayerRequestComponent},
   { path: 'wisdom-media', component:WisdomMediaComponent},

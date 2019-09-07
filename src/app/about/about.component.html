@@ -1,73 +1,96 @@
 <div class="indexBackground">
     <div style="height:200px"></div>
-    <div class="d-flex verticalMiddle">
+    <div class="verticalMiddle animated bounceInDown">
         <span class=" whoWeAreText">ABOUT US</span><br/>
     </div>
   </div>
-  <div class="whoWeAreDiv">
-      <ul class="noListStyle ">
-          <li><a routerLink = "/history">Our History</a></li>
-          <li><a routerLink = "/missionvision">Mission and Vision</a></li>
-          <li><a routerLink = "/beliefs">Our Beliefs</a></li>
-          <li><a routerLink = "/structure">Our Structure</a></li>
-        </ul>
-  </div>
-  <div class="container">
-    <div class="body">
-      <div class="welcomeAddress">
-        <br/>
-        <div >
-            <h2>OUR CHURCH<br/></h2>
-            <div>
-              <div class="col-md-12">
-                  <div class="col-md-6">
-                    <br>
-                      <div >
-                          <img class="img-responsive" src="../../assets/images/shasha_church.jpg"  width= "100%" height= "100%"><br>
 
-                      </div>
-                    </div><br/>
-                    <div class="col-md-6" style="text-align: justify">
-                        Wisdom Chapel <span class="welcomeAddText">is a vibrant, multi-ethnic church with the intent to save lives and souls<br/>
-                        We believe in the power of God’s Word to change lives and value the practical application<br/>
-                        of His Word to make a difference in who we are and what we do. Believing and obeying His message<br/>
-                         lead us in a discovery of real life and a hope for eternity. This is what the Bible teaches us,<br/>
-                          that Jesus Christ came as God’s gift to the world with a message of good news.</span>
-
-                        <br>
-                        <h2>SERVICE TIMES</h2>
-
-                            <span class="welcomeAddText">
-                                Sundays at 8:00 am<br/>
-                                Wednesdays at 6:00 pm<br/>
-                                Feetwashing Service : 1st Tuesday of the month
-                                Business Forum: 1st Thursday of the month
-                            </span>
-
-
-
-                       <h2>VISION STATEMENT</h2>
-                       <span class="welcomeAddText">
-                         To spread the gospel to all four corners of the earth<br/>
-                         To spread the Love of God abroad in all hearts.<br/>
-                         To make heaven
-                      </span><br/><br/>
-                    </div>
-              </div>
-
+  <ngui-inview>
+      <div *ngIf class="whoWeAreDiv">
+          <div class="row d-flex">
+            <div class="col-md-3 col-sm-12 text-center mt-lg-4"><!--mt: margin-top lg:large screen-->
+              <a class="whoweareLink"routerLink = "/about">Our Church</a>
             </div>
-            <!-- <div>
-                <span class="welcomeAddText">To discover,<br/>
-                  To raise,<br/>
-                  And to Sustain Leaders<br/>
-                  In the kingdom of God
-                </span><br/>
-            </div> -->
-
-
+            <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+              <a class="whoweareLink" routerLink = "/organizations">Affiliated Organizations</a>
+            </div>
+            <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+              <a class="whoweareLink" routerLink = "/branches">Our Branches</a>
+            </div>
+            <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+              <a class="whoweareLink" routerLink = "/structure">Our Structure</a>
+            </div>
+          </div>
 
         </div>
+  </ngui-inview>
+
+  <div class="container">
+    <div class="body">
+        <ngui-inview>
+      <div *ngIF class="welcomeAddress">
+        <br/>
+
+            <div>
+
+                <h2 class="animated rollIn">OUR CHURCH<br/></h2>
+                <div>
+                  <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br>
+                              <div >
+                                  <img class="img-responsive" src="../../assets/images/shasha_church.jpg"  width= "100%" height= "100%"><br>
+
+                              </div>
+                            </div><br/>
+                            <div class="col-md-6" style="text-align: justify">
+                                Wisdom Chapel <span class="welcomeAddText">is a vibrant, multi-ethnic church with the intent to save lives and souls<br/>
+                                We believe in the power of God’s Word to change lives and value the practical application<br/>
+                                of His Word to make a difference in who we are and what we do. Believing and obeying His message<br/>
+                                 lead us in a discovery of real life and a hope for eternity. This is what the Bible teaches us,<br/>
+                                  that Jesus Christ came as God’s gift to the world with a message of good news.</span>
+
+                                <br>
+                                <h2>SERVICE TIMES</h2>
+
+                                    <span class="welcomeAddText">
+                                        Sundays at 8:00 am<br/>
+                                        Wednesdays at 6:00 pm<br/>
+                                        Feetwashing Service : 1st Tuesday of the month
+                                        Business Forum: 1st Thursday of the month
+                                    </span>
+
+
+
+                               <h2>VISION STATEMENT</h2>
+                               <span class="welcomeAddText">
+                                 To spread the gospel to all four corners of the earth<br/>
+                                 To spread the Love of God abroad in all hearts.<br/>
+                                 To make heaven
+                              </span><br/><br/>
+                            </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!-- <div>
+                    <span class="welcomeAddText">To discover,<br/>
+                      To raise,<br/>
+                      And to Sustain Leaders<br/>
+                      In the kingdom of God
+                    </span><br/>
+                </div> -->
+
+
+
+            </div>
+
+
+
       </div>
+    </ngui-inview>
     </div>
   </div>
   <div class="footer downinfo"><br/>

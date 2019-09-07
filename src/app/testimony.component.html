@@ -1,102 +1,68 @@
-<div class="col-md-4 testimonyhalfDiv" >
-<div class="col-md-12" style="color: white">
-    <span style="font-size: x-large">TESTIFY</span><br/>
-    <span style="font-size: large">Thank God. Encourage others.</span><br/>
-    There is great power in sharing what God is doing in your life. You can encourage, strengthen and motivate other believers.<br/><br/>
-</div>
-<div class="col-md-12">
-    <b>TIPS FOR SHARING</b><br/>
-    <hr>
-    <ul>
-      <li> Keep it simple</li>
-      <li> Be concise yet detailed</li>
-      <li> Be ready to provide supporting documents if necessary</li>
-    </ul>
-
-</div>
-</div>
-<div class="col-md-8">
-    <form #productForm = "ngForm">
-      <div class="panel panel-primary">
-          <div class="panel-heading testimonyhalfDiv" style="color: black; text-align: center;">
-              <span ><h3>SHARE OR VIEW TESTIMONIES</h3>
-              </span>
-          </div>
-          <ul class="nav nav-pills">
-              <li class="active"><a data-toggle="pill" href="#share">Share Testimony</a></li>
-              <li><a data-toggle="pill" href="#view"  (click)="getTestimonies()">View Testimonies</a></li>
+<div class="row">
+<div class="col-md-4 testimonyhalfDiv">
+        <div class="col-md-12" >
+            <span style="font-size: x-large">TESTIFY</span><br/>
+            <span style="font-size: large">Thank God. Encourage others.</span><br/>
+            There is great power in sharing what God is doing in your life. You can encourage, strengthen and motivate other believers.<br/><br/>
+        </div>
+        <div class="col-md-12">
+            <b>TIPS FOR SHARING</b><br/>
+            <hr>
+            <ul class="list-group">
+              <li class="list-group-item"> Keep it simple</li>
+              <li class="list-group-item"> Be concise yet detailed</li>
+              <li class="list-group-item"> Be ready to provide supporting documents if necessary</li>
             </ul>
-            <div class="tab-content">
-                <div id="share" class="tab-pane fade in active">
-                    <div class="panel-body">
-
-                        <div class="form-group">
-                            <label for="Name">Full Name (required)</label>
-                            <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="Email">Email</label>
-                            <input id="Email" name="Email" [(ngModel)] = "Email" type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="date">Date</label>
-                            <input id="date" name="date" [(ngModel)] = "date" type="text" class="form-control" readonly required>
-                        </div>
-                        <div class="form-group">
-                            <label for="Title">Testimony Title</label>
-                                <select id="Title" name="Title" [(ngModel)] = "Title" class="form-control" >
-                                    <option hidden [value]="Title"  selected>Select a Title </option>
-                                    <option *ngFor="let testimonyType of testimonytypes" [ngValue] = "testimonyType">{{testimonyType}}</option>
-                                </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="Country">Country</label>
-                                <select id="Country" name="Country" [(ngModel)] = "Country" class="form-control" >
-                                    <option hidden [value]="Country"  selected>Select your Country </option>
-                                    <option *ngFor="let country of countries" [ngValue] = "country">{{country}}</option>
-                                </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="Sex">Sex</label>
-                                <select id="Sex" name="Sex" [(ngModel)] = "Sex" class="form-control" >
-                                    <option hidden [value]="Sex"  selected>Sex </option>
-                                    <option *ngFor="let sex of sexes" [ngValue] = "sex">{{sex}}</option>
-                                </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="testimony">Testimony</label>
-                            <textarea id="testimony" name = "testimony" rows="20" cols="50" [(ngModel)] = "Testimony"
-                             class="form-control" required></textarea>
-                        </div>
-                      </div>
-                      <div class="panel-footer">
-                        <button type="submit" class="btn btn-primary testimonyhalfDiv" (click)="SaveTestimony(); productForm.reset()">Save</button>
-                        <span *ngIf = "saved">
-                            <div class="alert  alert-success alert-dismissable fade in">Saved Successfully</div>
-                        </span>
-                      </div>
-                </div>
-
-                <div id="view" class="tab-pane fade">
-                   <div *ngFor="let testimony of testimonies">
-                      <div class="testimony">
-                          <h4 class="list-group-item-heading panel-heading">{{ testimony._Title}}</h4>
-                          <p class="list-group-item-text ">{{ testimony._Name}}</p>
-                          <p class="list-group-item-text">{{ testimony._Email}}</p>
-                          <p class="list-group-item-text ">{{ testimony._Sex}}</p>
-                          <p class="list-group-item-text">{{ testimony._Country}}</p>
-                          <p class="list-group-item-text ">{{ testimony._Date}}</p>
-                          <p class="list-group-item-text">{{ testimony._Testimony}}</p>
-                        </div>
-                  </div>
-                </div>
-
-            </div>
 
         </div>
 
-    </form>
+</div>
+<div class="col-md-8">
+  <div class="card">
+      <div class="card-header " style=" text-align: center;">
+          <span ><h3>SHARE OR VIEW TESTIMONIES</h3>
+          </span>
+      </div>
+      <div class="card-body">
+          <form #productForm = "ngForm">
+<ul class="nav nav-pills card-header-pills">
+    <li class="nav-item "><a class="nav-link active " data-toggle="pill" (click)="shareTestimony()">Share Testimony</a></li>
+    <li class="nav-item"><a class="nav-link " data-toggle="pill"  (click)="ViewTestimonies()">View Testimonies</a></li>
+</ul>
+<div class="tab-content">
+    <!-- <div id="share" class="tab-pane fade in active"> -->
+     <app-share-testimony *ngIf="Stestimony"></app-share-testimony>
+     <app-view-testimonies *ngIf="VTestimony"></app-view-testimonies>
+
+
 
 </div>
+            </form>
+      </div>
 
+  </div>
+
+</div>
+</div><br>
+<div class="footer downinfo"><br/>
+  <div class="verticalMiddle">
+    <span> Plot 6, Adelani Lane, OluwaGbebe Street,
+      Ologunfe Bus-Stop,
+      Lagos.</span>
+      <br/><br/>
+      Phone Number: 2348033476606<br/><br/>
+      Email Address: <span style="text-transform: lowercase"><a href="mailto:wisdomchapel@gmail.com" style="color: #ffffff">wisdomchapel@gmail.com</a> </span><br/>
+      <div>
+        <a href="https://www.facebook.com/WisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/facebook.png" alt="facebook" width="32" height="32" border="0" style="color:black"></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/WisdomChapeltc" target="_blank"><img src="https://xputertechnologies.com/public/twitter.png" alt="twitter" width="32" height="32" border="0" style="color: black"></a>&nbsp;&nbsp;
+        <a href="https://linkedin.com/company/wisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/linkedin.png" alt="linkedin" width="32" height="32" border="0" style="color:black"></a>&nbsp;&nbsp;
+        <a href="https://m.youtube.com/channel/UCC0dbQCPFedn2KkKBbJDJ0g" target="_blank"><img src="../../assets/images/youtubeicon.jpg" alt="youtube" width="28" height="24" border="0"></a>
+      </div><br/>
+
+
+  </div>
+    </div>
+<div class="footer CTerms">
+  ©2019 WISDOM CHAPEL - All rights reserved.
+</div>
 

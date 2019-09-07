@@ -1,83 +1,195 @@
-<div class="col-md-4 testimonyhalfDiv" >
-  <div class="col-md-12" style="color: white">
-      <span style="font-size: x-large">GIVING</span><br/>
-      <span style="font-size: large">Giving to the Lord.</span><br/>
-     Give, and it will come back to you. Good measures, pressed down, shaken together and running over.  </div>
-  <div class="col-md-12">
-      <b>PRAYER POINT</b><br/>
-      <hr>
-      <ul>
-        <li> Keep it simple</li>
-        <li> Be concise yet detailed</li>
-        <li> Be ready to provide supporting documents if necessary</li>
-      </ul>
+<div class="row">
+    <div class="col-md-4 testimonyhalfDiv" >
+        <div class="col-md-12" >
+            <span style="font-size: x-large">GIVING</span><br/>
+            <span style="font-size: large">Giving to the Lord.</span><br/>
+           Give, and it will come back to you. Good measures, pressed down, shaken together and running over.  </div>
+        <div class="col-md-12">
+            <b>PRAYER POINT</b><br/>
+            <hr>
+            <ul class="list-group">
+              <li class="list-group-item"> Keep it simple</li>
+              <li class="list-group-item"> Be concise yet detailed</li>
+              <li class="list-group-item"> Be ready to provide supporting documents if necessary</li>
+            </ul>
 
-  </div>
-  </div>
-  <div class="col-md-8">
-      <form #productForm = "ngForm">
-        <div class="panel panel-primary">
-            <div class="panel-heading testimonyhalfDiv" style="  text-align: center;">
-                <span ><h3>GIVE TO THE LORD</h3>
-                </span>
-            </div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label for="size">Payment Type</label>
-                    <select id="givingType" name="givingType" [(ngModel)] = "Giving" class="form-control" >
-                        <option hidden [value]="Giving"  selected>Select how you want to give </option>
-                        <option *ngFor="let givTypes of givingTypes" [ngValue] = "givTypes">{{givTypes}}</option>
-                    </select>
-                  </div>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card">
+              <div class="card-header " style=" text-align: center;">
+                  <span ><h3>GIVE TO THE LORD</h3>
+                  </span>
+              </div>
+              <div class="card-body">
+                  <form class="form-signup" #productForm = "ngForm">
+                      <div class="form-group">
+                          <!-- <label for="size">Payment Type</label> -->
+                          <select id="givingType" name="givingType" [(ngModel)] = "Giving" class="form-control" >
+                              <option hidden [value]="Giving"  selected>Select how you want to give </option>
+                              <option *ngFor="let givTypes of givingTypes" [ngValue] = "givTypes">{{givTypes}}</option>
+                          </select>
+                        </div>
 
-              <div class="form-group">
-                  <label for="Name">Full Name (required)</label>
-                  <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
+                    <!-- <div class="form-group">
+                        <label for="Name" >Full Name (required)</label>
+                        <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
+
+                         </div> -->
+                         <div class="form-label-group">
+                            <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" placeholder="Enter your first name" required autofocus>
+                            <label for="Name" >Full Name (required)</label>
+                             </div>
+
+
+                          <div class="form-label-group">
+                          <input id="Email" name="Email" [(ngModel)] = "Email" type="text" class="form-control" placeholder="Enter your Email" required autofocus>
+                          <label for="Email">Email</label>
+                          </div>
+
+                    <div class="form-label-group">
+                        <select id="sex" name="sex" [(ngModel)] = "Sex" class="form-control" placeholder="Your Sex" required autofocus>
+                            <option hidden [value]="Sex"  selected>Select a Sex </option>
+                            <option *ngFor="let sex of sexes" [ngValue] = "sex">{{sex}}</option>
+                          </select>
+
+                    </div>
+                    <div class="form-label-group">
+                        <select id="country" name="country" [(ngModel)] = "Country" class="form-control" placeholder="Your Country" required autofocus>
+                            <option hidden [value]="Country"  selected>Select a Country </option>
+                            <option *ngFor="let country of countries" [ngValue] = "country">{{country}}</option>
+                          </select>
+
+                    </div>
+                    <div class="form-label-group">
+                        <select id="Currency" name="Currency" [(ngModel)] = "Currency" class="form-control">
+                            <option hidden [value]="Currency"  selected>Select a Currency </option>
+                            <option *ngFor="let currency of currencies" [ngValue] = "currency">{{currency}}</option>
+                          </select>
+
+
+                    </div>
+                    <div class="form-label-group">
+                        <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" placeholder="Enter the Amount" required autofocus>
+                        <label for="Name">Amount</label>
+                      </div>
+                    <div class="form-label-group">
+                        <input id="PhoneNumber" name="PhoneNumber" [(ngModel)] = "PhoneNumber" type="text" class="form-control" placeholder="Enter the Amount" required autofocus>
+                      <label for="PhoneNumber">Phone Number</label>
+                                       </div>
+                  <!-- <button type="submit" class="btn btn-primary" (click)="Give(); productForm.reset()">Give</button> -->
+                  <button
+        angular-rave
+        [currency]="'NGN'"
+        [country]="'NG'"
+        [PBFPubKey] = "'FLWPUBK-800d6798c355556534ff9933d90a1b1e-X'"
+        [customer_email] = "'omowunmiekun1@gmail.com'"
+        [amount]="Amount"
+        [custom_title]="Giving"
+        [txref]="Name + newDate "
+        (callback)="paymentSuccess($event)"
+        (close)="paymentFailure()"
+        class="btn btn-primary">Give &#x20a6;{{ Amount }}</button>
+
+                    <span *ngIf = "saved">
+                        <div class="alert  alert-success">Saved Successfully</div>
+                    </span>
+                    </form>
               </div>
-              <div class="form-group">
-                  <label for="Email">Email</label>
-                  <input id="Email" name="Email" [(ngModel)] = "Email" type="text" class="form-control" required>
+              <div class="card-footer">
+                  <p>Thanks for giving. God bless you.</p>
               </div>
-              <div class="form-group">
-                  <label for="Name">Amount</label>
-                  <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" required>
-              </div>
-              <div class="form-group">
-                  <label for="Name">Sex</label>
-                  <select id="sex" name="sex" [(ngModel)] = "Sex" class="form-control">
-                      <option hidden [value]="Sex"  selected>Select a Sex </option>
-                      <option *ngFor="let sex of sexes" [ngValue] = "sex">{{sex}}</option>
-                    </select>
-              </div>
-              <div class="form-group">
-                  <label for="country">Country</label>
-                  <select id="country" name="country" [(ngModel)] = "Country" class="form-control">
-                    <option hidden [value]="Country"  selected>Select a Country </option>
-                    <option *ngFor="let country of countries" [ngValue] = "country">{{country}}</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                  <label for="Currency">Currency</label>
-                  <select id="Currency" name="Currency" [(ngModel)] = "Currency" class="form-control">
-                    <option hidden [value]="Currency"  selected>Select a Country </option>
-                    <option *ngFor="let currency of currencies" [ngValue] = "currency">{{currency}}</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                <label for="PhoneNumber">Phone Number</label>
-                <input id="PhoneNumber" name="PhoneNumber" [(ngModel)] = "PhoneNumber" type="text" class="form-control" required>
-            </div>
-            </div>
-            <div class="panel-footer">
-              <button type="submit" class="btn btn-primary testimonyhalfDiv" (click)="Give(); productForm.reset()">Give</button>
-              <span *ngIf = "saved">
-                  <div class="alert  alert-success">Saved Successfully</div>
-              </span>
-            </div>
           </div>
 
-      </form>
-<p>Thanks for giving. God bless you.</p>
+
+        </div>
+</div>
+
+<div class="card-body">
+    <div class="card-text">
+      <p class="remember">Already a member <a routerLink="/login" >Login</a></p>
+    </div>
+    <form class="go-bottom">
+      <div class=" align-items-center">
+              <input id="fName" name="fName" type="text" class="form-group" required>
+         <label for="fName" >First Name</label>
+      </div>
+
+      <div class=" form-group align-items-center">
+              <input type="text" class="form-group" required>
+
+            <label>Middle Name</label>
+
+      </div>
+
+      <div class=" form-group align-items-center">
+              <input type="text" class="form-group" required>
+              <label>Last Name</label>
+      </div>
+
+      <div class=" form-group align-items-center">
+              <input type="text" class="form-group" required>
+              <label>Email</label>
+
+      </div>
+
+      <div class=" form-group align-items-center">
+              <input type="text" class="form-group" required>
+              <label>Phone Number</label>
+
+      </div>
+
+      <div class=" form-group align-items-center">
+              <input type="text" class="form-group" required>
+              <label>Address</label>
+      </div>
+
+      <div class=" form-group align-items-center">
+          <input type="password" class="form-group" required>
+          <label>Password</label>
+        <!-- <div class="ui-g-12">
+            <span class="md-inputfield">
+                <input type="password" class="form-control" placeholder="Enter your password">
+                <label>Password</label>
+            </span>
+        </div> -->
+      </div>
+      <div class=" form-group align-items-center">
+              <input type="password" class="form-group" required>
+               <label>Confirm Password</label>
+            </div>
+
+
+      <div class="row align-items-center remember ui-g-6">
+          <input type="checkbox">Remember Me
+        </div>
+      <div class="form-inline float-right ui-g-6">
+          <input type="submit" value="Register" class="btn  login_btn">
+        </div>
+    </form>
   </div>
+<div class="footer downinfo"><br/>
+  <div class="verticalMiddle">
+    <span> Plot 6, Adelani Lane, OluwaGbebe Street,
+      Ologunfe Bus-Stop,
+      Lagos.</span>
+      <br/><br/>
+      Phone Number: 2348033476606<br/><br/>
+      Email Address: <span style="text-transform: lowercase"><a href="mailto:wisdomchapel@gmail.com" style="color: #ffffff">wisdomchapel@gmail.com</a> </span><br/>
+      <div>
+        <a href="https://www.facebook.com/WisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/facebook.png" alt="facebook" width="32" height="32" border="0" style="color:black"></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/WisdomChapeltc" target="_blank"><img src="https://xputertechnologies.com/public/twitter.png" alt="twitter" width="32" height="32" border="0" style="color: black"></a>&nbsp;&nbsp;
+        <a href="https://linkedin.com/company/wisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/linkedin.png" alt="linkedin" width="32" height="32" border="0" style="color:black"></a>&nbsp;&nbsp;
+        <a href="https://m.youtube.com/channel/UCC0dbQCPFedn2KkKBbJDJ0g" target="_blank"><img src="../../assets/images/youtubeicon.jpg" alt="youtube" width="28" height="24" border="0"></a>
+      </div><br/>
+
+
+  </div>
+    </div>
+<div class="footer CTerms">
+  ©2019 WISDOM CHAPEL - All rights reserved.
+</div>
+
+
 
 

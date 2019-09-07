@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   itemNo:number = 0;
   sub2: Subscription;
   sub3: this;
+  up: boolean = false;
   itemNo2: number;
   navbarOpen: boolean = false;
   constructor(public catService: CategoryService, private cartService : CartService) { }
@@ -27,6 +28,12 @@ export class HomeComponent implements OnInit {
     );
     this.itemNo2 = this.cartService.itemNo;
     console.log('oninit: '+this.itemNo+'2: '+this.itemNo2);
+
+    $(document).click(function(e) {
+      if (!$(e.target).is('.navbar')) {
+          $('.collapse').collapse('hide');
+        }
+    });
   }
   ngOnChanges(changes:SimpleChanges): void{
     this.cartService.cartNo

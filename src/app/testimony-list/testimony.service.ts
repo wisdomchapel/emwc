@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Testimony } from '../testimony.model';
+import { Testimony, Prayer } from '../testimony.model';
 import { TestimonyType } from '../Testimony-type.component';
 import { Countries } from '../countries.component';
 import { Observable, Subject } from 'rxjs';
@@ -20,7 +20,8 @@ export class TestimonyService{
   }
 th:string;
 testimonySubChanged = new Subject<Testimony[]>();
-urlCategories = "https://localhost:5001/api/Category";
+urlTestimonies = "https://localhost:5001/api/Testimony";
+urlPrayer = "https://localhost:5001/api/Prayer";
 
   private testimonies:Testimony[]=[
 
@@ -40,10 +41,18 @@ urlCategories = "https://localhost:5001/api/Category";
   getTestimonies(){
     return this.testimonies.slice();
   }
-
+  GetTestimony():Observable<Testimony[]>{
+    return this.http.get<Testimony[]>(`${this.urlTestimonies}`).pipe(catchError(this._serverError));
+  }
   PostTestimony(testimony:Testimony):Observable<any[]>{
     const headers = new HttpHeaders('Content-Type: application/json');
-    return this.http.post(this.urlCategories,JSON.stringify(testimony),{headers
+    return this.http.post(this.urlTestimonies,JSON.stringify(testimony),{headers
+    }).pipe(catchError(this._serverError));
+  }
+
+  PostPrayer(prayer:Prayer):Observable<any[]>{
+    const headers = new HttpHeaders('Content-Type: application/json');
+    return this.http.post(this.urlPrayer,JSON.stringify(prayer),{headers
     }).pipe(catchError(this._serverError));
   }
 
@@ -55,7 +64,7 @@ urlCategories = "https://localhost:5001/api/Category";
 
   PostTestimonyFrontEnd(testimony:Testimony):Observable<any[]>{
     const headers = new HttpHeaders('Content-Type: application/json');
-    return this.http.post(this.urlCategories,JSON.stringify(testimony),{headers
+    return this.http.post(this.urlTestimonies,JSON.stringify(testimony),{headers
     }).pipe(catchError(this._serverError));
   }
 

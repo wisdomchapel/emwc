@@ -9,6 +9,7 @@ body{
 }
 
 .row.content {height: 450px}
+
 @media screen and (max-width: 767px) {
   .sidenav {
     height: auto;
@@ -17,7 +18,42 @@ body{
   .row.content {
     height:auto;
   }
+
 }
+/* #filters{
+  display: none;
+}*/
+/* @media screen and (max-width:500px)
+{
+    #filterButton
+    {
+        display: block;
+    }
+} */
+@media screen and (min-width:510px)
+{
+    #dropdownLink
+    {
+        visibility: hidden;
+    }
+
+}
+
+.navbar{
+  display: inline-flex;
+  width:100%;
+}
+
+.btn.smallfont{
+  font-size: 0.1px;
+  color: white;
+}
+.dispInline{
+  display: inline ;
+
+}
+
+
 .itemDesc{
   height: 40px;
 }
@@ -29,6 +65,10 @@ body{
   font-size: large;
   color: magenta;
   text-transform: capitalize;
+}
+
+.contactText{
+  font-size: medium;
 }
 .headingHeight{
   height: 180px;
@@ -44,6 +84,73 @@ body{
   width:100%;
   height: 500px;
   background-image: url('./assets/images/churchbackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.beliefBackground{
+  width:100%;
+  height: 500px;
+  background-image: url('./assets/images/wisdomexcellence.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.missionBackground{
+  max-width: 100%;
+  height: 500px;
+  background-image: url('./assets/images/missionvision.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.organizationBackground{
+  width:100%;
+  height: 500px;
+  background-image: url('./assets/images/organizations.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.branchesBackground{
+  width:100%;
+  height: 500px;
+  background-image: url('./assets/images/branches.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+.programBackground{
+  width:100%;
+  height: 500px;
+  background-image: url('./assets/images/service.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.contactBackground{
+  width:100%;
+  height: 500px;
+  background-image: url('./assets/images/contact3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.fullJustify{
+  text-align: justify;
+  text-justify: auto;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: serif;
 }
 .verticalMiddle{
   vertical-align: middle;
@@ -62,7 +169,7 @@ body{
 
 .welcomeAddText{
   color:black;
-  font-size: small;
+  font-size: medium;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .welcomeText{
@@ -70,25 +177,100 @@ body{
 }
 .whoWeAreText{
   font-size: 50px;
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
+}
+
+.missionText{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  outline-color: #000;
+  text-shadow: 2px 2px #000;
+  /* outline-style: double; */
+}
+
+
+.organizationText{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  outline-color: #000;
+  text-shadow: 2px 2px #000;
+  color: #ff00ff;
+}
+
+.contactHeaderText{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  outline-color: #000;
+  text-shadow: 2px 2px #000;
+  color: #ff00ff;
+}
+
+.branchText{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-shadow: 2px 2px #000;
+
 }
 
 .whoWeAreDiv{
   background-color: #000;
   color: white;
-  height: 70px;
-  text-align: center;
+  height: 60px;
+  vertical-align: middle;
+  margin:auto;
+  /* text-align: center; */
+}
+.structure{
+/* background-color: aquamarine; */
+  vertical-align: middle;
+  margin-left: 33%;
+  margin-top:5%;
+}
+
+/* @media  (max-height: 480px) {
+  .whoWeAreDiv {height: 150px;}
+
+}*/
+
+@media screen and (max-width: 575.98px){
+  .whoWeAreDiv{
+    height:100px;
+
+  }
+  /* ul li.nav-item.marginal.text-uppercase  a.nav-link.product_hover{
+    color:blue;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  } */
+
 }
 .whoWeAreDiv .noListStyle li{
   display: inline;
   padding-left: 2rem;
 }
-.whoWeAreDiv .noListStyle li a{
+.whoWeAreDiv .noListStyle li a, .whoWeAreDiv.a{
   color:white;
 }
+
+
+.whoweareLink
+{
+  color:white;
+}
+
+
 .welcomeText2{
   font-size: medium;
+}
+
+.programText2{
+  font-size: medium;
+  text-shadow: 2px 2px #000;
 }
 .colorBackground{
   color:black;
@@ -96,11 +278,18 @@ body{
 
 .testimonyhalfDiv{
   /* background-color: #0099ff; */
-  background-color: #ff00ff;
+  /* background-color: #ff00ff; */
+  background-color: cornsilk;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
 
+.contactDiv{
+  background-color:rgb(255, 231, 12,0.6);
+  height: fit-content;
+}
 .panel-footer>.testimonyhalfDiv{
   background-color: #ff00ff;
 }
@@ -109,7 +298,10 @@ body{
   background-color: rgb(255, 231, 12,0.6);
   /* background-color: #ff00ff; */
 }
-.testimony .panel-heading{
+.card>.card-header{
+  background-color: cornsilk;
+}
+.testimony .card-header{
   background-color: rgb(255, 231, 12,0.6);
 
 }
@@ -174,8 +366,9 @@ body{
   text-transform: capitalize;
 }
 
-ul li.marginal a.product_hover{
+ul li.nav-item.marginal.text-uppercase  a.nav-link.product_hover{
   color:white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -186,8 +379,19 @@ a.product_hover{
 
 
 }
-.hoverMe{
 
+form.go-bottom label {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+form.go-bottom input:focus, form.go-bottom textarea:focus {
+  padding: 4px 6px 20px 6px;
+}
+form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
+  top: 100%;
+  margin-top: -29px;
 }
 
 ul.noListStyle{
@@ -200,6 +404,7 @@ a.gownTextHover:link, a.gownTextHoverHead:link{
 a.gownTextHover{
   color:#000;
   font-size:small;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a.gownTextHover:hover{
 color: #000;
@@ -249,6 +454,18 @@ font-weight: bold;
   border-color:  #ff0055 transparent transparent transparent;
 
 }
+
+@media (max-width: 575.98px){
+  .whoWeAre{
+    height:auto;
+    width:auto;
+  }
+  .aboutUs{
+    height:auto;
+    width:auto;
+  }
+
+}
 .giving{
   display: none;
   background-color: rgb(232, 232, 232);
@@ -264,7 +481,7 @@ font-weight: bold;
   border-style: solid;
   border-color:  #ff0055 transparent transparent transparent;
 }
-.wisdomMedia{
+.programs{
   display: none;
   background-color: rgb(232, 232, 232);
    /* rgb(215, 253, 253);
@@ -272,7 +489,7 @@ font-weight: bold;
   position: fixed; /* Sit on top of the page content */
   width: 15%; /* Full width (cover the whole page) */
   height: auto; /* Full height (cover the whole page) */
-  left: 57%;
+  left: 43%;
   /* right: 5%; */
   z-index: 3;
   cursor: pointer;
@@ -286,7 +503,7 @@ font-weight: bold;
   position: fixed; /* Sit on top of the page content */
   width: fit-content; /* Full width (cover the whole page) */
   height: auto; /* Full height (cover the whole page) */
-  left: 20%;
+  left: 17%;
   /* right: 5%; */
   z-index: 1;
   cursor: pointer;
@@ -308,19 +525,37 @@ font-weight: bold;
   border-color:  #ff0055 transparent transparent transparent;
 }
 
+@media (max-width: 768px){
+ .contactUs {
+   display:none !important;
+ }
+}
 .categoryList{
   font-size: 15px;
   color:#000;
   list-style-type:none;
 }
-
-.marginal:hover a.product_hover + span.ghover{
+/* .marginal:hover a.product_hover + span.ghover{
+  display: block;
+} */
+@media (min-width: 575.98px){
+  .marginal:hover  a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
+  ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.programs{
    display: block;
  }
- .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
- ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.wisdomMedia{
+}
+
+
+ /* .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
+ ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.programs{
+  display: block;
+} */
+/* @media (max-width: 575.98px){
+  .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
+ ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.programs{
   display: block;
 }
+} */
 
  .downinfo{
    background-color: magenta;
@@ -332,10 +567,11 @@ font-weight: bold;
  }
 
  .CTerms{
-   background-color: #000;
-   color:white;
+   background-color:  rgb(255, 231, 12,0.6);
+   color:magenta;
    /* height: 50%; */
    vertical-align: middle;
+   font-weight: bold;
    text-align: center;
 
 
@@ -360,3 +596,5 @@ p:hover + .after{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+

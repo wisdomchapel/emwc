@@ -18,6 +18,9 @@ import {TabViewModule} from 'primeng/tabview';
 import {PanelModule} from 'primeng/panel';
 import { CarouselModule} from 'ngx-bootstrap/carousel';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NguiInviewModule, NguiListModule, NguiUtilsModule } from '@ngui/common';
+import { TextareaAutosizeModule } from 'ngx-textarea-autosize';
+import { AngularRaveModule} from 'angular-rave';
 import {  } from 'rxjs';
 
 
@@ -49,11 +52,11 @@ import { AffiliateOrganizationsComponent } from './affiliate-organizations/affil
 import { BranchesComponent } from './branches/branches.component';
 import { ContactComponent } from './contact/contact.component';
 import { CareersComponent } from './careers/careers.component';
-import { WomenConventionComponent } from './women-convention/women-convention.component';
-import { EvangelismComponent } from './evangelism/evangelism.component';
+import { WomenConventionComponent } from './Programs/women-convention/women-convention.component';
+import { EvangelismComponent } from './Programs/evangelism/evangelism.component';
 import { PrayerRequestComponent } from './prayer-request/prayer-request.component';
 import { MountainExperienceComponent } from './mountain-experience.component';
-import { ConventionComponent } from './convention.component';
+import { ConventionComponent } from './Programs/convention/convention.component';
 import { TestimonyComponent } from './testimony.component';
 import { GivingComponent } from './giving.component';
 import { ShoppingListService } from './shopping-list/ShoppingList.service';
@@ -63,6 +66,16 @@ import { TestimonyService} from './testimony-list/testimony.service'
 import { TestimonyListComponent } from './testimony-list/testimony-list.component';
 import { TestimonyItemComponent } from './testimony-list/testimony-item/testimony-item.component';
 import { WisdomMediaComponent } from './wisdom-media/wisdom-media.component';
+import { ProgramsComponent } from './Programs/programs.component';
+import { ShareTestimonyComponent } from './share-testimony/share-testimony.component';
+import { ViewTestimoniesComponent } from './view-testimonies/view-testimonies.component';
+import { MountainComponent } from './Programs/mountain/mountain.component';
+import { PraiseNightComponent } from './Programs/praise-night/praise-night.component';
+import { FeetWashComponent } from './Programs/feet-wash/feet-wash.component';
+import { BusinessForumComponent } from './Programs/business-forum/business-forum.component';
+import { CarolComponent } from './Programs/carol/carol.component';
+import { CoupleDinnerComponent } from './Programs/couple-dinner/couple-dinner.component';
+import { DepartmentsComponent } from './departments/departments.component';
 
 @NgModule({
   declarations: [
@@ -101,7 +114,17 @@ import { WisdomMediaComponent } from './wisdom-media/wisdom-media.component';
     PrayerRequestComponent,
     TestimonyListComponent,
     TestimonyItemComponent,
-    WisdomMediaComponent
+    WisdomMediaComponent,
+    ProgramsComponent,
+    ShareTestimonyComponent,
+    ViewTestimoniesComponent,
+    MountainComponent,
+    PraiseNightComponent,
+    FeetWashComponent,
+    BusinessForumComponent,
+    CarolComponent,
+    CoupleDinnerComponent,
+    DepartmentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -121,6 +144,11 @@ import { WisdomMediaComponent } from './wisdom-media/wisdom-media.component';
     TabViewModule,
     PanelModule,
     NgbModule,
+    NguiInviewModule,
+    NguiListModule,
+    NguiUtilsModule,
+    TextareaAutosizeModule,
+    AngularRaveModule,
 
     CarouselModule.forRoot(),
   ],

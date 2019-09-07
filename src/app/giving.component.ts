@@ -2,12 +2,13 @@ import { Component, OnInit } from "@angular/core";
 import { FormGroup } from "@angular/forms";
 import { GivingType } from "./Giving-type.component";
 import { Countries } from "./countries.component";
+import { Router } from '@angular/router';
 // import * as i18nIsoCountries from 'i18n-iso-countries';
 
 @Component({
   selector: 'app-giving',
   templateUrl: './giving.component.html',
-  // styleUrls: ['./mountain-experience.component.css']
+   styleUrls: ['./giving.component.css']
   })
 
   export class GivingComponent implements OnInit{
@@ -23,6 +24,7 @@ import { Countries } from "./countries.component";
     Currency:string;
     PhoneNumber:string;
     tmpArr;
+    newDate:any;
     // testimonies:Array<Giving>;
     saved:boolean;
     ProductId:string;
@@ -35,9 +37,10 @@ import { Countries } from "./countries.component";
     // .filter(k => typeof CategoryType[k] === "number") as string[];
 
 
-    constructor(){}
+    constructor(private router:Router){}
 
     ngOnInit(){
+    this.newDate = Date.now();
   //     i18nIsoCountries.registerLocale(require("i18n-iso-countries/langs/en.json"));
   //     let valueName = '';
   //  this.tmpArr = this.tmpArr.map((e) => {
@@ -50,7 +53,18 @@ import { Countries } from "./countries.component";
     }
 
     Give(){
+this.router.navigateByUrl('https://raveappv2.herokuapp.com/pay/evangelicalministrieswisdomchapelwnah');
 
+    }
+
+    paymentSuccess(event){
+alert('Success Yay');
+console.log(event);
+      console.log('paid');
+    }
+
+    paymentFailure(){
+      console.log('Faild to pay');
     }
 
   }

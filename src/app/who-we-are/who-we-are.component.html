@@ -1,58 +1,107 @@
 <div class="indexBackground">
     <div style="height:200px"></div>
-    <div class="d-flex verticalMiddle">
+    <div class=" verticalMiddle animated bounceInDown">
         <span class=" whoWeAreText">WHO WE ARE</span><br/>
     </div>
   </div>
-  <div class="whoWeAreDiv">
-      <ul class="noListStyle ">
-          <li><a routerLink = "/history">Our History</a></li>
-          <li><a routerLink = "/missionvision">Mission and Vision</a></li>
-          <li><a routerLink = "/beliefs">Our Beliefs</a></li>
-          <li><a routerLink = "/structure">Our Structure</a></li>
-        </ul>
-  </div>
-  <div class="container">
+
+  <ngui-inview>
+        <div *ngIf class="whoWeAreDiv">
+            <div class="row d-flex animated bounceInLeft">
+              <div class="col-md-3 col-sm-12 text-center mt-lg-4"><!--mt: margin-top lg:large screen-->
+                <a class="whoweareLink"routerLink = "/history">Our History</a>
+              </div>
+              <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+                <a class="whoweareLink" routerLink = "/missionvision">Mission and Vision</a>
+              </div>
+              <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+                <a class="whoweareLink" routerLink = "/beliefs">Our Beliefs</a>
+              </div>
+              <div class="col-md-3 col-sm-12 text-center mt-lg-4">
+                <a class="whoweareLink" routerLink = "/structure">Our Structure</a>
+              </div>
+            </div>
+
+          </div>
+      </ngui-inview>
+
+  <!-- <div class="container"> -->
     <div class="body">
       <div class="welcomeAddress">
         <br/>
-        <div >
-            <h2>Our History<br/></h2>
-            <span class="welcomeAddText">May 7, 1958, saw the birth of a young man in the midst of traditional worshippers.
-                There was a lot of struggles before he realised his calling. He experienced a lot of downfalls,
-                embarassment, disapointment. Until he joined a Celestian Church who gave him the name <i>Woli D</i>.
-            </span><br/>
+        <!-- <ngui-inview> -->
+        <div *ngIf>
 
-            <span ><a routerLink = "/history"><button class="btn btn-lg  btn-default readLink">Read More...</button></a></span>
+                <div class="welcomeAddText animated bounceIn">
+                    Something NEW is here! But before I introduce it to you let me first welcome you to the Information
+                    Gateway of the Evangelical Ministries Wisdom Chapel. Established in 1997,
+                    Wisdom Chapel is a growing church with Parishes of the church currently at three locations in Nigeria.
+                    I believe you are here for more information about this body of God, but nevertheless, for taking out
+                    of your time to visit and read through, May the Lord continue to bless you in all your ways.
+                    This is Wisdom Chapel, where we discover, raise and sustain leaders in the Kingdom of God.
+                    On this platform, there are various activities that could be done, be it sending a prayer request,
+                    giving to the Lord, sharing testimonies and so much more.<br/>
+                    Remain Blessed Brethren<br><br>
+                </div>
+
 
         </div>
+      <!-- </ngui-inview> -->
+        <div class="card-deck" >
+            <div class="card">
+                <!-- <div class="header">WELCOME ADDRESS</div> -->
+            <div class="card-body">
+                <h5 class="card-title">Our History</h5>
+                <p class="card-text">
+                    <span class="welcomeAddText">May 7, 1958, saw the birth of a young man in the midst of traditional worshippers.
+                        There was a lot of struggles before he realised his calling. He experienced a lot of downfalls,
+                        embarassment, disapointment. Until he joined a Celestian Church who gave him the name <i>Woli D</i>.
+                    </span><br/>
+                      </p>
+                </div>
+                <div class="card-footer">
+                    <span ><a routerLink = "/history"><button class="btn btn-md  btn-primary ">Read More...</button></a></span>
 
-  <div>
-    <h2>Mission and Vission</h2>
-    <span class="welcomeAddText">To Discover, Raise, and Sustain Leaders in the Kingdom...
-    </span><br/>
-    <a routerLink = "/missionvision"><span class="btn btn-lg  btn-default readLink">Read More...</span></a>
-  </div>
-
-  <div>
-      <h2>Our Beliefs</h2>
-      <span class="welcomeAddText">A very fim belief that is the backbone of this church is the truth that
-        we do not die...
-      </span><br/>
-      <a routerLink = "/beliefs"><span class="btn btn-lg  btn-default readLink">Read More...</span></a>
-    </div>
-
-    <div>
-        <h2>Our Structure</h2>
-        <span class="welcomeAddText">The overall head of the church has always been and will always be
-          The Lord Jesus. Who made it possible for us to be alive. Then the founder of the ministry:
-          Bishop S.D. Ogedengbe.
-        </span><br/>
-        <a routerLink = "/welcomeAddress"><span class="btn btn-lg  btn-default readLink">Read More...</span></a>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mission and Vission</h5>
+                <span class="welcomeAddText">To Discover, Raise, and Sustain Leaders in the Kingdom...
+                  </span><br/>
+              </div>
+              <div class="card-footer">
+                  <a routerLink = "/missionvision"><span class="btn btn-md  btn-primary ">Read More...</span></a>
+                </div>
+            </div>
+            <div class="card">
+               <div class="card-body">
+                <h5 class="card-title">Our Beliefs</h5>
+                <span class="welcomeAddText">A very fim belief that is the backbone of this church is the truth that
+                    we do not die...
+                  </span><br/>
+              </div>
+              <div class="card-footer">
+                  <span > <a routerLink = "/beliefs"><span class="btn btn-md  btn-primary ">Read More...</span></a>
+                </span>
+             </div>
+            </div>
+            <div class="card">
+                  <div class="card-body">
+                  <h5 class="card-title">Our Structure</h5>
+                  <span class="welcomeAddText">The overall head of the church has always been and will always be
+                      The Lord Jesus. Who made it possible for us to be alive. Then the founder of the ministry:
+                      Bishop S.D. Ogedengbe.
+                    </span><br/>
+                </div>
+                <div class="card-footer">
+                    <span > <a routerLink = "/structure"><span class="btn btn-md  btn-primary ">Read More...</span></a></span>
+               </div>
+              </div>
+          </div>
       </div>
-      </div>
-    </div>
-  </div>
+    </div><br>
+  <!-- </div> -->
   <div class="footer downinfo"><br/>
     <div class="verticalMiddle">
       <span> Plot 6, Adelani Lane, OluwaGbebe Street,

@@ -1,0 +1,115 @@
+<div class="row">
+  <div class="col-md-4 testimonyhalfDiv" >
+      <div class="col-md-12" >
+          <span style="font-size: x-large">JOIN A DEPARTMENT</span><br/>
+          <span style="font-size: large">Giving to the Lord.</span><br/>
+         Give, and it will come back to you. Good measures, pressed down, shaken together and running over.  </div>
+      <div class="col-md-12">
+          <b>PRAYER POINT</b><br/>
+          <hr>
+          <ul>
+            <li> Keep it simple</li>
+            <li> Be concise yet detailed</li>
+            <li> Be ready to provide supporting documents if necessary</li>
+          </ul>
+
+      </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+            <div class="card-header " style=" text-align: center;">
+                <span ><h3>JOIN DEPARTMENT</h3>
+                </span>
+            </div>
+            <div class="card-body">
+                <form #productForm = "ngForm">
+                    <div class="form-group">
+                        <label for="dept">Department Type</label>
+                        <select id="dept" name="dept" [(ngModel)] = "Department" class="form-control" >
+                            <option hidden [value]="Department"  selected>Select what department you wnat to join </option>
+                            <option *ngFor="let dept of departments" [ngValue] = "dept">{{dept}}</option>
+                        </select>
+                      </div>
+
+                  <div class="form-group">
+                      <label for="Name">Full Name (required)</label>
+                      <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="Email">Email</label>
+                      <input id="Email" name="Email" [(ngModel)] = "Email" type="text" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="Name">Amount</label>
+                      <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="Name">Sex</label>
+                      <select id="sex" name="sex" [(ngModel)] = "Sex" class="form-control">
+                          <option hidden [value]="Sex"  selected>Select a Sex </option>
+                          <option *ngFor="let sex of sexes" [ngValue] = "sex">{{sex}}</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="country">Country</label>
+                      <select id="country" name="country" [(ngModel)] = "Country" class="form-control">
+                        <option hidden [value]="Country"  selected>Select a Country </option>
+                        <option *ngFor="let country of countries" [ngValue] = "country">{{country}}</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="Currency">Currency</label>
+                      <select id="Currency" name="Currency" [(ngModel)] = "Currency" class="form-control">
+                        <option hidden [value]="Currency"  selected>Select a Currency </option>
+                        <option *ngFor="let currency of currencies" [ngValue] = "currency">{{currency}}</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="Amount">Amount</label>
+                      <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="PhoneNumber">Phone Number</label>
+                    <input id="PhoneNumber" name="PhoneNumber" [(ngModel)] = "PhoneNumber" type="text" class="form-control" required>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary" (click)="Give(); productForm.reset()">Give</button> -->
+
+                  <span *ngIf = "saved">
+                      <div class="alert  alert-success">Saved Successfully</div>
+                  </span>
+                  </form>
+            </div>
+            <div class="card-footer">
+                <p>Thanks for giving. God bless you.</p>
+            </div>
+        </div>
+
+
+      </div>
+</div>
+<br>
+<div class="footer downinfo"><br/>
+<div class="verticalMiddle">
+  <span> Plot 6, Adelani Lane, OluwaGbebe Street,
+    Ologunfe Bus-Stop,
+    Lagos.</span>
+    <br/><br/>
+    Phone Number: 2348033476606<br/><br/>
+    Email Address: <span style="text-transform: lowercase"><a href="mailto:wisdomchapel@gmail.com" style="color: #ffffff">wisdomchapel@gmail.com</a> </span><br/>
+    <div>
+      <a href="https://www.facebook.com/WisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/facebook.png" alt="facebook" width="32" height="32" border="0" style="color:black"></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/WisdomChapeltc" target="_blank"><img src="https://xputertechnologies.com/public/twitter.png" alt="twitter" width="32" height="32" border="0" style="color: black"></a>&nbsp;&nbsp;
+      <a href="https://linkedin.com/company/wisdomChapel" target="_blank"><img src="https://xputertechnologies.com/public/linkedin.png" alt="linkedin" width="32" height="32" border="0" style="color:black"></a>&nbsp;&nbsp;
+      <a href="https://m.youtube.com/channel/UCC0dbQCPFedn2KkKBbJDJ0g" target="_blank"><img src="../../assets/images/youtubeicon.jpg" alt="youtube" width="28" height="24" border="0"></a>
+    </div><br/>
+
+
+</div>
+  </div>
+<div class="footer CTerms">
+©2019 WISDOM CHAPEL - All rights reserved.
+</div>
+
+
+
+
