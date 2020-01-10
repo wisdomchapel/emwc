@@ -1,21 +1,5 @@
 <div class="row">
-  <div class="col-md-4 testimonyhalfDiv" >
-      <div class="col-md-12" >
-          <span style="font-size: x-large">JOIN A DEPARTMENT</span><br/>
-          <span style="font-size: large">Giving to the Lord.</span><br/>
-         Give, and it will come back to you. Good measures, pressed down, shaken together and running over.  </div>
       <div class="col-md-12">
-          <b>PRAYER POINT</b><br/>
-          <hr>
-          <ul>
-            <li> Keep it simple</li>
-            <li> Be concise yet detailed</li>
-            <li> Be ready to provide supporting documents if necessary</li>
-          </ul>
-
-      </div>
-      </div>
-      <div class="col-md-8">
         <div class="card">
             <div class="card-header " style=" text-align: center;">
                 <span ><h3>JOIN DEPARTMENT</h3>
@@ -31,6 +15,19 @@
                         </select>
                       </div>
 
+                      <div class="form-group">
+                        <label for="deptChild">Department Type</label>
+                        <select id="deptChild" name="deptChild" [(ngModel)] = "departmentChild" class="form-control"  >
+                            <option hidden [value]="departmentChild"  selected>Select what department child you wnat to join </option>
+
+                              <ng-container *ngIf="Department != null">
+                                  <option  *ngFor="let deptChild of deptChilds" [ngValue] = "deptChild">{{deptChild}}</option>
+                              </ng-container>
+
+
+                              </select>
+                      </div>
+
                   <div class="form-group">
                       <label for="Name">Full Name (required)</label>
                       <input id="Name" name="Name" [(ngModel)] = "Name"type="text" class="form-control" required>
@@ -40,9 +37,10 @@
                       <input id="Email" name="Email" [(ngModel)] = "Email" type="text" class="form-control" required>
                   </div>
                   <div class="form-group">
-                      <label for="Name">Amount</label>
-                      <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" required>
-                  </div>
+                      <label for="Reason">Reason</label>
+                      <textarea autosize id="Reason" name = "Reason"  [(ngModel)] = "Reason" placeholder="Write your reason"
+                      class="form-control" required></textarea>
+                    </div>
                   <div class="form-group">
                       <label for="Name">Sex</label>
                       <select id="sex" name="sex" [(ngModel)] = "Sex" class="form-control">
@@ -57,17 +55,7 @@
                         <option *ngFor="let country of countries" [ngValue] = "country">{{country}}</option>
                       </select>
                   </div>
-                  <div class="form-group">
-                      <label for="Currency">Currency</label>
-                      <select id="Currency" name="Currency" [(ngModel)] = "Currency" class="form-control">
-                        <option hidden [value]="Currency"  selected>Select a Currency </option>
-                        <option *ngFor="let currency of currencies" [ngValue] = "currency">{{currency}}</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <label for="Amount">Amount</label>
-                      <input id="Amount" name="Amount" [(ngModel)] = "Amount" type="text" class="form-control" required>
-                  </div>
+
                   <div class="form-group">
                     <label for="PhoneNumber">Phone Number</label>
                     <input id="PhoneNumber" name="PhoneNumber" [(ngModel)] = "PhoneNumber" type="text" class="form-control" required>
@@ -80,7 +68,7 @@
                   </form>
             </div>
             <div class="card-footer">
-                <p>Thanks for giving. God bless you.</p>
+                <p>Thanks for joining the workforce of God. God bless you.</p>
             </div>
         </div>
 

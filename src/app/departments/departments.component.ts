@@ -12,7 +12,7 @@ export class DepartmentsComponent implements OnInit {
   form : FormGroup;
   Name:string;
   Email:string;
-  Amount: number;
+  Reason: string;
   Sex:string;
   Title:string;
   Giving: string;
@@ -21,11 +21,12 @@ export class DepartmentsComponent implements OnInit {
   PhoneNumber:string;
   Department : string;
   saved:boolean;
-
+departmentChild:string;
   sexes:Array<string> = ['Male','Female'];
   countries = Object.keys(Countries);
   currencies:Array<string> = ['NGN','USD'];
   departments = Object.keys(DepartmentType);
+  deptChilds:Array<string> = ['DeptChld1','DeptChild2'];
   constructor() { }
 
   ngOnInit() {

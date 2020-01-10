@@ -6,7 +6,7 @@ import {HttpModule} from '@angular/http';
 import { HttpClientModule } from "@angular/common/http";
 import * as $ from 'jquery';
 import { AppRoutingModule } from './app-routing.module';
-import {DataTableModule} from 'primeng/components/datatable/datatable';
+// import {DataTableModule} from 'primeng/components/datatable/datatable';
 import {DataViewModule} from 'primeng/dataview';
 import {DialogModule} from 'primeng/components/dialog/dialog';
 import {DragDropModule} from 'primeng/components/dragdrop/dragdrop';
@@ -133,7 +133,7 @@ import { DepartmentsComponent } from './departments/departments.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    DataTableModule,
+    // DataTableModule,
     DialogModule,
     DataViewModule,
     DragDropModule,

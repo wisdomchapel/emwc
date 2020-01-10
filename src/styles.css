@@ -286,6 +286,11 @@ body{
 
 }
 
+.structurehalfDiv{
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .contactDiv{
   background-color:rgb(255, 231, 12,0.6);
   height: fit-content;
