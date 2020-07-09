@@ -1,14 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
-body{
-  /* background-color: rgba(153, 255, 255, 0.1); */
 
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  /* background-color: rgba(153, 255, 255, 0.1); */
   /* background-image: url('./assets/images/background.jpg'); */
   margin: 0px;
-  padding:0px;
+  padding: 0px;
 }
 
-.row.content {height: 450px}
+.row.content {
+  height: 450px
+}
 
 @media screen and (max-width: 767px) {
   .sidenav {
@@ -16,13 +19,14 @@ body{
     padding: 15px;
   }
   .row.content {
-    height:auto;
+    height: auto;
   }
-
 }
+
 /* #filters{
   display: none;
 }*/
+
 /* @media screen and (max-width:500px)
 {
     #filterButton
@@ -30,49 +34,49 @@ body{
         display: block;
     }
 } */
-@media screen and (min-width:510px)
-{
-    #dropdownLink
-    {
-        visibility: hidden;
-    }
 
+@media screen and (min-width:510px) {
+  #dropdownLink {
+    visibility: hidden;
+  }
 }
 
-.navbar{
+.navbar {
   display: inline-flex;
-  width:100%;
+  width: 100%;
 }
 
-.btn.smallfont{
+.btn.smallfont {
   font-size: 0.1px;
   color: white;
 }
-.dispInline{
-  display: inline ;
 
+.dispInline {
+  display: inline;
 }
 
-
-.itemDesc{
+.itemDesc {
   height: 40px;
 }
-.textHeight{
-  height:35px;
+
+.textHeight {
+  height: 35px;
 }
 
-.headertext{
+.headertext {
   font-size: large;
   color: magenta;
   text-transform: capitalize;
 }
 
-.contactText{
+.contactText {
   font-size: medium;
 }
-.headingHeight{
+
+.headingHeight {
   height: 180px;
 }
+
 .login-panel {
   text-align: center;
   width: 350px;
@@ -80,8 +84,9 @@ body{
   padding: 50px 20px;
   margin: 100px auto 0 auto;
 }
-.indexBackground{
-  width:100%;
+
+.indexBackground {
+  width: 100%;
   height: 500px;
   background-image: url('./assets/images/churchbackground.jpg');
   background-position: center;
@@ -90,8 +95,8 @@ body{
   /* background-repeat: no-repeat; */
 }
 
-.beliefBackground{
-  width:100%;
+.beliefBackground {
+  width: 100%;
   height: 500px;
   background-image: url('./assets/images/wisdomexcellence.jpg');
   background-position: center;
@@ -100,7 +105,7 @@ body{
   /* background-repeat: no-repeat; */
 }
 
-.missionBackground{
+.missionBackground {
   max-width: 100%;
   height: 500px;
   background-image: url('./assets/images/missionvision.jpg');
@@ -109,16 +114,17 @@ body{
   background-size: 100% 100%;
 }
 
-.organizationBackground{
-  width:100%;
+.organizationBackground {
+  width: 100%;
   height: 500px;
   background-image: url('./assets/images/organizations.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.branchesBackground{
-  width:100%;
+
+.branchesBackground {
+  width: 100%;
   height: 500px;
   background-image: url('./assets/images/branches.jpg');
   background-position: center;
@@ -126,8 +132,9 @@ body{
   background-size: cover;
   /* background-repeat: no-repeat; */
 }
-.programBackground{
-  width:100%;
+
+.programBackground {
+  width: 100%;
   height: 500px;
   background-image: url('./assets/images/service.jpg');
   background-position: center;
@@ -136,8 +143,8 @@ body{
   /* background-repeat: no-repeat; */
 }
 
-.contactBackground{
-  width:100%;
+.contactBackground {
+  width: 100%;
   height: 500px;
   background-image: url('./assets/images/contact3.jpg');
   background-position: center;
@@ -146,42 +153,45 @@ body{
   /* background-repeat: no-repeat; */
 }
 
-.fullJustify{
+.fullJustify {
   text-align: justify;
   text-justify: auto;
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   font-family: serif;
 }
-.verticalMiddle{
+
+.verticalMiddle {
   vertical-align: middle;
   text-align: center;
-  color:white;
+  color: white;
 }
 
-.welcomeAddress{
+.welcomeAddress {
   text-align: center;
   color: #ff00ff;
 }
 
-.readLink{
+.readLink {
   color: #0277bd;
 }
 
-.welcomeAddText{
-  color:black;
+.welcomeAddText {
+  color: black;
   font-size: medium;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.welcomeText{
+
+.welcomeText {
   font-size: xx-large;
 }
-.whoWeAreText{
+
+.whoWeAreText {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
 
-.missionText{
+.missionText {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -190,8 +200,7 @@ body{
   /* outline-style: double; */
 }
 
-
-.organizationText{
+.organizationText {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -200,7 +209,7 @@ body{
   color: #ff00ff;
 }
 
-.contactHeaderText{
+.contactHeaderText {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -209,27 +218,27 @@ body{
   color: #ff00ff;
 }
 
-.branchText{
+.branchText {
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   text-shadow: 2px 2px #000;
-
 }
 
-.whoWeAreDiv{
+.whoWeAreDiv {
   background-color: #000;
   color: white;
   height: 60px;
   vertical-align: middle;
-  margin:auto;
+  margin: auto;
   /* text-align: center; */
 }
-.structure{
-/* background-color: aquamarine; */
+
+.structure {
+  /* background-color: aquamarine; */
   vertical-align: middle;
   margin-left: 33%;
-  margin-top:5%;
+  margin-top: 5%;
 }
 
 /* @media  (max-height: 480px) {
@@ -237,93 +246,98 @@ body{
 
 }*/
 
-@media screen and (max-width: 575.98px){
-  .whoWeAreDiv{
-    height:100px;
-
+@media screen and (max-width: 575.98px) {
+  .whoWeAreDiv {
+    height: 100px;
   }
   /* ul li.nav-item.marginal.text-uppercase  a.nav-link.product_hover{
     color:blue;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
   } */
-
 }
-.whoWeAreDiv .noListStyle li{
+
+.whoWeAreDiv .noListStyle li {
   display: inline;
   padding-left: 2rem;
 }
-.whoWeAreDiv .noListStyle li a, .whoWeAreDiv.a{
-  color:white;
+
+.whoWeAreDiv .noListStyle li a, .whoWeAreDiv.a {
+  color: white;
 }
 
-
-.whoweareLink
-{
-  color:white;
+.whoweareLink {
+  color: white;
 }
 
-
-.welcomeText2{
+.welcomeText2 {
   font-size: medium;
 }
 
-.programText2{
+.programText2 {
   font-size: medium;
   text-shadow: 2px 2px #000;
 }
-.colorBackground{
-  color:black;
+
+.colorBackground {
+  color: black;
 }
 
-.testimonyhalfDiv{
+.testimonyhalfDiv {
   /* background-color: #0099ff; */
   /* background-color: #ff00ff; */
   background-color: cornsilk;
   height: fit-content;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
-.structurehalfDiv{
+.structurehalfDiv {
   height: fit-content;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contactDiv{
-  background-color:rgb(255, 231, 12,0.6);
+.contactDiv {
+  background-color: rgb(255, 231, 12, 0.6);
   height: fit-content;
 }
-.panel-footer>.testimonyhalfDiv{
+
+.panel-footer>.testimonyhalfDiv {
   background-color: #ff00ff;
 }
 
-.panel>.panel-heading{
-  background-color: rgb(255, 231, 12,0.6);
+.panel>.panel-heading {
+  background-color: rgb(255, 231, 12, 0.6);
   /* background-color: #ff00ff; */
 }
-.card>.card-header{
+
+.card>.card-header {
   background-color: cornsilk;
 }
-.testimony .card-header{
-  background-color: rgb(255, 231, 12,0.6);
 
+.testimony .card-header {
+  background-color: rgb(255, 231, 12, 0.6);
 }
-.overlay{
+
+.overlay {
   background-color: rgba(12, 255, 255, 0.6);
-  position: fixed; /* Sit on top of the page content */
+  position: fixed;
+  /* Sit on top of the page content */
   /* display: none; Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   /* background-color: rgba(0,0,0,0.5); Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
+
 .sidenav {
   height: 100%;
   width: 100%;
@@ -332,7 +346,6 @@ body{
   /* top: 100; */
   left: 0;
   /* background-color: #ddd; */
-
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -349,40 +362,35 @@ body{
   color: #0ea;
 }
 
-.sidenav a.categoryList{
+.sidenav a.categoryList {
   font-size: 15px;
-  color:#000;
-  list-style-type:none;
+  color: #000;
+  list-style-type: none;
 }
 
-.sidenav a.categoryList:hover{
+.sidenav a.categoryList:hover {
   font-size: 15px;
-  color:#0ea;
-  list-style-type:none;
+  color: #0ea;
+  list-style-type: none;
 }
 
-
-.largeText{
+.largeText {
   font-size: xx-large;
 }
 
-.smallText{
+.smallText {
   font-size: small;
   text-transform: capitalize;
 }
 
-ul li.nav-item.marginal.text-uppercase  a.nav-link.product_hover{
-  color:white;
+ul li.nav-item.marginal.text-uppercase a.nav-link.product_hover {
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-a.product_hover{
+a.product_hover {
   /* display: none; */
   font-size: small;
-
-
-
 }
 
 form.go-bottom label {
@@ -391,170 +399,197 @@ form.go-bottom label {
   left: 0;
   width: 100%;
 }
+
 form.go-bottom input:focus, form.go-bottom textarea:focus {
   padding: 4px 6px 20px 6px;
 }
-form.go-bottom input:focus + label, form.go-bottom textarea:focus + label {
+
+form.go-bottom input:focus+label, form.go-bottom textarea:focus+label {
   top: 100%;
   margin-top: -29px;
 }
 
-ul.noListStyle{
-list-style-type: none;
+ul.noListStyle {
+  list-style-type: none;
 }
 
-a.gownTextHover:link, a.gownTextHoverHead:link{
+a.gownTextHover:link, a.gownTextHoverHead:link {
   text-decoration: none;
 }
-a.gownTextHover{
-  color:#000;
-  font-size:small;
+
+a.gownTextHover {
+  color: #000;
+  font-size: small;
   font-family: Arial, Helvetica, sans-serif;
 }
-a.gownTextHover:hover{
-color: #000;
-font-size:small;
-/* 0099ff */
-text-decoration: none;
-font-weight: bold;
+
+a.gownTextHover:hover {
+  color: #000;
+  font-size: small;
+  /* 0099ff */
+  text-decoration: none;
+  font-weight: bold;
 }
-a.gownTextHoverHead{
+
+a.gownTextHoverHead {
   color: #0099ff;
   font-size: medium;
-text-decoration: none;
+  text-decoration: none;
 }
-a.gownTextHoverHead:hover{
+
+a.gownTextHoverHead:hover {
   /* color: #ff0000;
 text-decoration: none; */
-font-weight: bold;
+  font-weight: bold;
 }
-.ghover{
+
+.ghover {
   display: none;
   background-color: rgb(232, 232, 232);
-   /* rgb(215, 253, 253);
+  /* rgb(215, 253, 253);
   rgba(223, 223, 223, 0.6); */
-  position: fixed; /* Sit on top of the page content */
-  width: 90%; /* Full width (cover the whole page) */
-  height: 50%; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 90%;
+  /* Full width (cover the whole page) */
+  height: 50%;
+  /* Full height (cover the whole page) */
   left: 5%;
   right: 5%;
   z-index: 3;
   cursor: pointer;
-
 }
-.whoWeAre{
+
+.whoWeAre {
   display: none;
   background-color: rgb(232, 232, 232);
-   /* rgb(215, 253, 253);
+  /* rgb(215, 253, 253);
   rgba(223, 223, 223, 0.6); */
-  position: fixed; /* Sit on top of the page content */
-  width: 15%; /* Full width (cover the whole page) */
-  height: auto; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 15%;
+  /* Full width (cover the whole page) */
+  height: auto;
+  /* Full height (cover the whole page) */
   left: 8%;
   /* right: 5%; */
   z-index: 3;
   cursor: pointer;
   border-style: solid;
   /* border-color:  #270ac7 transparent transparent transparent; */
-  border-color:  #ff0055 transparent transparent transparent;
-
+  border-color: #ff0055 transparent transparent transparent;
 }
 
-@media (max-width: 575.98px){
-  .whoWeAre{
-    height:auto;
-    width:auto;
+@media screen and(max-width: 575.98px) {
+  .whoWeAre {
+    height: auto;
+    width: auto;
   }
-  .aboutUs{
-    height:auto;
-    width:auto;
+  .aboutUs {
+    height: auto;
+    width: auto;
   }
-
 }
-.giving{
+
+.giving {
   display: none;
   background-color: rgb(232, 232, 232);
-   /* rgb(215, 253, 253);
+  /* rgb(215, 253, 253);
   rgba(223, 223, 223, 0.6); */
-  position: fixed; /* Sit on top of the page content */
-  width: 15%; /* Full width (cover the whole page) */
-  height: auto; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 15%;
+  /* Full width (cover the whole page) */
+  height: auto;
+  /* Full height (cover the whole page) */
   left: 42%;
   /* right: 5%; */
   z-index: 3;
   cursor: pointer;
   border-style: solid;
-  border-color:  #ff0055 transparent transparent transparent;
+  border-color: #ff0055 transparent transparent transparent;
 }
-.programs{
+
+.programs {
   display: none;
   background-color: rgb(232, 232, 232);
-   /* rgb(215, 253, 253);
+  /* rgb(215, 253, 253);
   rgba(223, 223, 223, 0.6); */
-  position: fixed; /* Sit on top of the page content */
-  width: 15%; /* Full width (cover the whole page) */
-  height: auto; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 15%;
+  /* Full width (cover the whole page) */
+  height: auto;
+  /* Full height (cover the whole page) */
   left: 43%;
   /* right: 5%; */
   z-index: 3;
   cursor: pointer;
   border-style: solid;
-  border-color:  #ff0055 transparent transparent transparent;
+  border-color: #ff0055 transparent transparent transparent;
 }
 
-.aboutUs{
+.aboutUs {
   display: none;
   background-color: rgb(232, 232, 232);
-  position: fixed; /* Sit on top of the page content */
-  width: fit-content; /* Full width (cover the whole page) */
-  height: auto; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  width: fit-content;
+  /* Full width (cover the whole page) */
+  height: auto;
+  /* Full height (cover the whole page) */
   left: 17%;
   /* right: 5%; */
   z-index: 1;
   cursor: pointer;
   border-style: solid;
-  border-color:  #ff0055 transparent transparent transparent;
+  border-color: #ff0055 transparent transparent transparent;
 }
 
-.contactUs{
+.contactUs {
   display: none;
   background-color: rgb(232, 232, 232);
-  position: fixed; /* Sit on top of the page content */
-  width: 70%; /* Full width (cover the whole page) */
-  height: fit-content; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 70%;
+  /* Full width (cover the whole page) */
+  height: fit-content;
+  /* Full height (cover the whole page) */
   left: 10%;
   /* right: 5%; */
   z-index: 1;
   cursor: pointer;
   border-style: solid;
-  border-color:  #ff0055 transparent transparent transparent;
+  border-color: #ff0055 transparent transparent transparent;
 }
 
-@media (max-width: 768px){
- .contactUs {
-   display:none !important;
- }
+@media (max-width: 768px) {
+  .contactUs {
+    display: none !important;
+  }
 }
-.categoryList{
+
+.categoryList {
   font-size: 15px;
-  color:#000;
-  list-style-type:none;
+  color: #000;
+  list-style-type: none;
 }
+
 /* .marginal:hover a.product_hover + span.ghover{
   display: block;
 } */
-@media (min-width: 575.98px){
-  .marginal:hover  a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
-  ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.programs{
-   display: block;
- }
+
+@media (min-width: 575.98px) {
+  .marginal:hover a.product_hover+span.whoWeAre, .marginal:hover a.product_hover+span.aboutUs, .marginal:hover a.product_hover+span.contactUs, .marginal:hover a.product_hover+span.giving, .marginal:hover a.product_hover+span.programs {
+    display: block;
+  }
 }
 
-
- /* .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
+/* .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
  ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.programs{
   display: block;
 } */
+
 /* @media (max-width: 575.98px){
   .marginal:hover a.product_hover + span.whoWeAre,  .marginal:hover a.product_hover + span.aboutUs,  .marginal:hover a.product_hover + span.contactUs
  ,.marginal:hover a.product_hover + span.giving,.marginal:hover a.product_hover + span.programs{
@@ -562,44 +597,45 @@ font-weight: bold;
 }
 } */
 
- .downinfo{
-   background-color: magenta;
-   height:200px;
-   bottom: 0;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 13px;
-   /* font-family: Verdana, Geneva, sans-serif; */
- }
+.downinfo {
+  background-color: magenta;
+  height: 200px;
+  bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  /* font-family: Verdana, Geneva, sans-serif; */
+}
 
- .CTerms{
-   background-color:  rgb(255, 231, 12,0.6);
-   color:magenta;
-   /* height: 50%; */
-   vertical-align: middle;
-   font-weight: bold;
-   text-align: center;
+.CTerms {
+  background-color: rgb(255, 231, 12, 0.6);
+  color: magenta;
+  /* height: 50%; */
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+}
 
-
- }
 /* li:hover + div.gown_hover{
   display: block;
   background-color: #0ea;
 } */
 
-p:hover + .after{
+p:hover+.after {
   display: block;
-  color:green;
+  color: green;
   font-size: 25px;
 }
 
-
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
-
